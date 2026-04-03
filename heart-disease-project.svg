@@ -24,10 +24,11 @@
   <path d="M252 212C224 196 214 166 231 148C241 138 257 141 266 154C275 141 291 138 301 148C318 166 308 196 280 212L266 221L252 212Z" fill="#FF6B7A"/>
   <rect x="344" y="114" width="324" height="120" rx="22" fill="#0E1824" stroke="white" stroke-opacity=".08"/>
   <text x="372" y="160" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Heart Disease Detection</text>
-  <text x="372" y="194" fill="#9FB5C8" font-family="Arial, sans-serif" font-size="16">Random Forest • Flask • Clinical Insights</text>
+  <text x="372" y="194" fill="#9FB5C8" font-family="Arial, sans-serif" font-size="16">Random Forest • Web Demo • Clinical Insights</text>
   <rect x="344" y="258" width="324" height="148" rx="22" fill="#0E1824" stroke="white" stroke-opacity=".08"/>
   <rect x="372" y="290" width="180" height="12" rx="6" fill="#F7FAFF" fill-opacity=".14"/>
   <rect x="372" y="318" width="244" height="12" rx="6" fill="#F7FAFF" fill-opacity=".1"/>
   <rect x="372" y="346" width="208" height="12" rx="6" fill="#F7FAFF" fill-opacity=".1"/>
   <rect x="372" y="374" width="152" height="12" rx="6" fill="url(#accent)" fill-opacity=".9"/>
 </svg>
+

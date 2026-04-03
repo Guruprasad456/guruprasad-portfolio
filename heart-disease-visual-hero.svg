@@ -35,14 +35,14 @@
   <text x="146" y="166" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="26" letter-spacing="5">HEALTHCARE AI FLAGSHIP</text>
   <text x="146" y="236" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="62" font-weight="700">Heart Disease Detection</text>
   <text x="146" y="302" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="62" font-weight="700">System</text>
-  <text x="146" y="350" fill="#9CB5C9" font-family="Arial, sans-serif" font-size="26">Machine learning driven clinical risk screening with Flask delivery,</text>
+  <text x="146" y="350" fill="#9CB5C9" font-family="Arial, sans-serif" font-size="26">Machine learning driven clinical risk screening with polished web delivery,</text>
   <text x="146" y="388" fill="#9CB5C9" font-family="Arial, sans-serif" font-size="26">multi-model evaluation, and report-style output design.</text>
 
   <g opacity="0.9">
     <rect x="146" y="440" width="232" height="64" rx="20" fill="url(#accent)"/>
     <text x="180" y="482" fill="#08131F" font-family="Arial, sans-serif" font-size="24" font-weight="700">Clinical Screening</text>
     <rect x="400" y="440" width="198" height="64" rx="20" fill="#F7FAFF" fill-opacity="0.1" stroke="rgba(255,255,255,0.12)"/>
-    <text x="446" y="482" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Flask App</text>
+    <text x="446" y="482" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Web Demo</text>
   </g>
 
   <g transform="translate(734 124)">
@@ -65,3 +65,5 @@
     <text x="50" y="414" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Logistic, SVM, Tree, Forest, KNN</text>
   </g>
 </svg>
+
+

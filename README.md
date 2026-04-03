@@ -1,4 +1,4 @@
-﻿# Guruprasad Portfolio - GitHub Pages Package
+# Guruprasad Portfolio - GitHub Pages Package
 
 This folder is a separate static package for publishing the portfolio on GitHub Pages.
 
@@ -16,9 +16,9 @@ It does not change the main project folder.
 
 ## What is replaced from the main project
 
-- `server.py` is not included
-- the live Flask HDD app is replaced by the static heart demo and case-study flow
-- server APIs are replaced by built-in static preview behavior on GitHub Pages
+- dynamic runtime files are not included
+- the live HDD runtime is replaced by the static heart demo and case-study flow
+- dynamic APIs are replaced by built-in static preview behavior on GitHub Pages
 
 ## Files to upload
 
@@ -27,7 +27,7 @@ Upload the full contents of this folder to the GitHub repository root.
 Keep the `pngm` folder because it contains:
 
 - the notebook file
-- the training script
+- the notebook proof files
 - the dataset CSV
 - the HDD video asset
 
@@ -51,4 +51,9 @@ This package is prepared for:
 ## Notes
 
 - The GitHub Pages version is the permanent free static portfolio
-- The full Python and Flask version still stays in the main project folder for local demos
+- The full local runtime version still stays in the main project folder for local demos
+
+
+
+
+

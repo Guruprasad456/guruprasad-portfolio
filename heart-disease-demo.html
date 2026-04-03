@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Live portfolio demo of Guruprasad Potdar's Flask-based Heart Disease Detection System."
+    content="Interactive portfolio demo of Guruprasad Potdar's Heart Disease Detection System."
   >
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Heart Disease Demo | Guruprasad Potdar">
@@ -63,15 +63,15 @@
       <section class="section demo-hero-section">
         <div class="demo-hero-grid">
           <div class="demo-hero-copy reveal">
-            <p class="eyebrow">Flask Project Demo</p>
+            <p class="eyebrow">Healthcare Project Demo</p>
             <h1 class="page-title">Heart Disease Detection System as a live screening demo.</h1>
             <p class="page-subtitle demo-hero-subtitle">
-              Open the original Flask app or use the quick risk preview below.
+              Review the screening flow and use the quick risk preview below.
             </p>
 
             <div class="demo-chip-row">
               <span>Python</span>
-              <span>Flask</span>
+              <span>Web Demo</span>
               <span>Machine Learning</span>
               <span>Scikit-learn</span>
               <span>Clinical Inputs</span>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="hero-actions">
-              <a class="button" href="#liveHeartDemo">Launch Clinical Console</a>
+              <a class="button" href="#liveHeartDemo">View Screening Flow</a>
               <a class="button button-ghost" href="projects.html">Back to Projects</a>
               <button class="button button-ghost" type="button" data-demo-walkthrough="heart">Start Walkthrough</button>
             </div>
@@ -88,7 +88,7 @@
           <article class="page-card demo-showcase-card heart-monitor-showcase reveal">
             <div class="demo-showcase-top">
               <span class="card-label">Clinical Monitor</span>
-              <span class="demo-mini-badge">Flask + ML</span>
+              <span class="demo-mini-badge">Clinical Web Demo</span>
             </div>
             <div class="heart-monitor-canvas">
               <div class="heart-monitor-grid">
@@ -118,55 +118,42 @@
         </div>
       </section>
 
-      <section class="section" id="liveHeartDemo">
+            <section class="section" id="liveHeartDemo">
         <div class="section-heading reveal">
-          <p class="eyebrow">Clinical Console</p>
-          <h2>Use the original Flask app directly from the portfolio.</h2>
+          <p class="eyebrow">Screening Walkthrough</p>
+          <h2>Review the input and report flow directly in the portfolio.</h2>
         </div>
 
-        <article class="page-card live-app-shell reveal">
-          <div class="live-app-toolbar">
-            <div>
-              <p class="card-label">Embedded Flask Experience</p>
-              <h3>Actual heart disease web app</h3>
-              <p class="demo-note">The portfolio server will try to start the local Flask app and load it here.</p>
+        <div class="heart-preview-grid">
+          <article class="page-card heart-preview-card reveal">
+            <img class="heart-preview-media" src="hdd-input-page.png" alt="Heart Disease Detection input screen preview">
+            <div class="heart-preview-copy">
+              <p class="card-label">Input Screen</p>
+              <h3>Clinical intake layout</h3>
+              <p class="demo-note">This static preview shows the structured patient-intake page used for the heart-risk screening workflow.</p>
             </div>
+          </article>
 
-            <div class="live-app-actions">
-              <span class="live-app-status" id="heartFlaskStatus">Checking local Flask app...</span>
-              <button class="button button-ghost button-small" type="button" id="heartFlaskReload">Reload App</button>
-              <a class="button button-small" id="heartFlaskLaunch" href="/heart-app/" target="_blank" rel="noreferrer">Open Fullscreen</a>
+          <article class="page-card heart-preview-card reveal">
+            <img class="heart-preview-media" src="hdd-output-page.png" alt="Heart Disease Detection report screen preview">
+            <div class="heart-preview-copy">
+              <p class="card-label">Report Screen</p>
+              <h3>Risk summary output</h3>
+              <p class="demo-note">This report-style view presents the score, risk level, clinical flags, and next-step guidance in a reviewer-friendly format.</p>
             </div>
-          </div>
-
-          <div class="live-app-frame-shell">
-            <iframe
-              id="heartFlaskFrame"
-              class="live-app-embed"
-              title="Heart Disease Detection Flask App"
-              loading="lazy"
-              src="about:blank"
-            ></iframe>
-
-            <div class="live-app-fallback" id="heartFlaskFallback">
-              <strong>Waiting for the local Flask app</strong>
-              <p>
-                Open the portfolio through <code>server.py</code>. The page will try to start the local Flask app automatically and then load it here.
-              </p>
-            </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
         <div class="demo-builder-grid heart-simulator-grid">
           <article class="page-card demo-form-card reveal">
             <div class="demo-panel-head">
               <div>
-                <p class="card-label">Portfolio Simulator</p>
+                <p class="card-label">Interactive Preview</p>
                 <h2>Clinical risk preview lab</h2>
               </div>
             </div>
 
-            <p class="demo-note">Use this quick preview for a fast local risk summary.</p>
+            <p class="demo-note">Use this guided preview to test intake values and see how the result summary responds.</p>
 
             <form class="demo-builder-form heart-demo-form" id="heartDemoForm">
               <div class="demo-field-grid">
@@ -341,7 +328,7 @@
                   <p class="card-label">Workflow</p>
                   <ul class="detail-list">
                     <li>User enters patient and lifestyle inputs</li>
-                    <li>The Flask backend converts them into model features</li>
+                    <li>The workflow maps them into model-ready features</li>
                     <li>The model generates a risk result</li>
                     <li>The report screen explains flags and recommendations</li>
                   </ul>
@@ -350,10 +337,10 @@
                 <article class="page-card">
                   <p class="card-label">Files Used</p>
                   <ul class="detail-list">
-                    <li><code>app.py</code> for Flask routes and prediction logic</li>
+                    <li><code>hdd-input-page.png</code> for the intake-screen proof</li>
                     <li><code>models.pkl</code> for the saved model bundle</li>
-                    <li><code>templates/index.html</code> for the intake UI</li>
-                    <li><code>templates/result.html</code> for the report view</li>
+                    <li><code>hdd-output-page.png</code> for the report-screen proof</li>
+                    <li><code>heart-disease-case-study.html</code> for the complete project story</li>
                   </ul>
                 </article>
 
@@ -361,7 +348,7 @@
                   <p class="card-label">Portfolio Value</p>
                   <ul class="detail-list">
                     <li>Shows end-to-end AI product thinking</li>
-                    <li>Combines ML logic with a real web app</li>
+                    <li>Combines ML logic with a polished web experience</li>
                     <li>Makes the project easy to demo</li>
                   </ul>
                 </article>
@@ -464,6 +451,20 @@
   <script src="script.js?v=20260401-results-upgrade"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

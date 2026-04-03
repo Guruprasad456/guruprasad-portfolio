@@ -1,4 +1,4 @@
-﻿const rotatingTitles = [
+const rotatingTitles = [
   "Intelligent Product Systems",
   "Machine Learning Workflows",
   "Data-Driven Interfaces",
@@ -32,16 +32,16 @@ const chatbotClear = document.getElementById("chatbotClear");
 const voiceIntroButtons = document.querySelectorAll("[data-voice-intro]");
 const heartDemoForm = document.getElementById("heartDemoForm");
 const heartDemoReset = document.getElementById("heartDemoReset");
-const heartFlaskFrame = document.getElementById("heartFlaskFrame");
-const heartFlaskStatus = document.getElementById("heartFlaskStatus");
-const heartFlaskLaunch = document.getElementById("heartFlaskLaunch");
-const heartFlaskReload = document.getElementById("heartFlaskReload");
-const heartFlaskFallback = document.getElementById("heartFlaskFallback");
+const heartPreviewFrame = document.getElementById("heartPreviewFrame");
+const heartPreviewStatus = document.getElementById("heartPreviewStatus");
+const heartPreviewLaunch = document.getElementById("heartPreviewLaunch");
+const heartPreviewReload = document.getElementById("heartPreviewReload");
+const heartPreviewFallback = document.getElementById("heartPreviewFallback");
 const isLocalPortfolioHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
 const isGitHubPagesHost = /\.github\.io$/i.test(window.location.hostname);
-const useServerChat = window.location.protocol.startsWith("http") && !isGitHubPagesHost;
-const isStaticPortfolioHost = window.location.protocol.startsWith("http") && isGitHubPagesHost;
-const heartFlaskDirectUrl = "/heart-app/";
+const useServerChat = false;
+const isStaticPortfolioHost = true;
+const heartPreviewDirectUrl = "heart-disease-case-study.html";
 const themeButtons = document.querySelectorAll(".theme-chip");
 const siteLoader = document.getElementById("siteLoader");
 const initialChatbotMarkup = chatbotMessages ? chatbotMessages.innerHTML : "";
@@ -338,7 +338,7 @@ function ensureDeviceLayoutPrompt() {
   deviceLayoutPrompt.hidden = true;
   deviceLayoutPrompt.innerHTML = `
     <div class="device-layout-card" role="dialog" aria-modal="true" aria-labelledby="deviceLayoutTitle">
-      <button class="device-layout-close" type="button" data-layout-close aria-label="Close view selection">×</button>
+      <button class="device-layout-close" type="button" data-layout-close aria-label="Close view selection">�</button>
       <p class="device-layout-kicker">Choose your view</p>
       <h2 id="deviceLayoutTitle">How are you opening the portfolio?</h2>
       <p class="device-layout-copy">
@@ -347,12 +347,12 @@ function ensureDeviceLayoutPrompt() {
       <p class="device-layout-recommendation" data-layout-recommendation></p>
       <div class="device-layout-grid">
         <button class="device-layout-choice" type="button" data-layout-choice="layout-mobile-mode">
-          <span class="device-layout-icon" aria-hidden="true">📱</span>
+          <span class="device-layout-icon" aria-hidden="true">??</span>
           <strong>Mobile View</strong>
           <small>Single-column layout, larger tap targets, cleaner demo stacking.</small>
         </button>
         <button class="device-layout-choice" type="button" data-layout-choice="layout-laptop-mode">
-          <span class="device-layout-icon" aria-hidden="true">💻</span>
+          <span class="device-layout-icon" aria-hidden="true">??</span>
           <strong>Laptop View</strong>
           <small>Wide layout, denser sections, and fuller desktop spacing.</small>
         </button>
@@ -432,11 +432,11 @@ function initializeDeviceLayoutPreference() {
 
 function repairMojibakeText() {
   const fixes = [
-    ["Ã¢â‚¬â„¢", "'"],
-    ["Ã¢â‚¬â€œ", "-"],
-    ["Ã¢â‚¬â€", "-"],
-    ["Ã¢â‚¬Å“", '"'],
-    ["Ã¢â‚¬ï¿½", '"'],
+    ["â€™", "'"],
+    ["â€“", "-"],
+    ["â€”", "-"],
+    ["â€œ", '"'],
+    ["â€�", '"'],
   ];
 
   document.querySelectorAll("p, li, span, strong, small, h1, h2, h3, h4, a, button").forEach((element) => {
@@ -456,13 +456,13 @@ function repairMojibakeText() {
   });
 }
 
-function syncHeartFlaskTheme(theme) {
-  if (heartFlaskLaunch) {
-    heartFlaskLaunch.href = `${heartFlaskDirectUrl}?theme=${encodeURIComponent(theme)}`;
+function syncHeartPreviewTheme(theme) {
+  if (heartPreviewLaunch) {
+    heartPreviewLaunch.href = `${heartPreviewDirectUrl}?theme=${encodeURIComponent(theme)}`;
   }
 
-  if (heartFlaskFrame && heartFlaskFrame.contentWindow) {
-    heartFlaskFrame.contentWindow.postMessage(
+  if (heartPreviewFrame && heartPreviewFrame.contentWindow) {
+    heartPreviewFrame.contentWindow.postMessage(
       { type: "portfolio-theme", theme },
       "*"
     );
@@ -493,15 +493,15 @@ const portfolioKnowledge = {
   projects: [
     {
       name: "Heart Disease Detection System",
-      keywords: ["heart", "heart disease", "heart disease detection", "heart disease prediction", "healthcare", "flask", "random forest", "medical", "cardio", "screening"],
-      description: "A clinician-style cardiovascular screening project that converts structured patient inputs into a heart-risk prediction through a real Flask web app.",
+      keywords: ["heart", "heart disease", "heart disease detection", "heart disease prediction", "healthcare", "random forest", "medical", "cardio", "screening"],
+      description: "A clinician-style cardiovascular screening project that converts structured patient inputs into a heart-risk prediction through a polished web experience.",
       features: [
         "Structured patient intake for clinical features",
-        "Machine learning prediction workflow inside Flask",
+        "Machine learning prediction workflow inside the screening interface",
         "Real-time heart-risk output with reviewable results",
         "Notebook, model, and app proof in one portfolio flow"
       ],
-      technologies: ["Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "CSV dataset"]
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "CSV dataset", "Web demo"]
     },
     {
       name: "AI Study Mood Detector",
@@ -552,7 +552,7 @@ portfolioKnowledge.education = [
 portfolioKnowledge.resumeHighlights = [
   "Python and Java foundation",
   "Machine learning and deep learning workflows",
-  "Flask application development",
+  "Interactive web application development",
   "Android and mobile AI concepts",
   "Practical AI problem solving"
 ];
@@ -578,39 +578,39 @@ const detailedProjectMeta = {
   "Heart Disease Detection System": {
     id: "heart-disease",
     category: "Healthcare AI",
-    platform: "Flask web application with machine learning inference",
+    platform: "Interactive web application with machine learning inference",
     engine: "Random Forest classification model",
     domainDefinition: "Heart disease is a broad term for conditions that affect the heart and blood vessels. In this portfolio, the project focuses on screening risk patterns from structured clinical data.",
     need: "medical risk patterns are often hidden inside multiple numeric inputs, so the project turns raw clinical fields into a faster screening-style workflow",
     problem: "The project targets early heart disease risk screening by turning medical input fields into a quick prediction workflow.",
-    solution: "Guruprasad combined patient clinical parameters, preprocessing, and a Random Forest model inside a Flask web app for real-time prediction.",
+    solution: "Guruprasad combined patient clinical parameters, preprocessing, and a Random Forest model inside a polished web screening flow for real-time prediction.",
     datasets: "the local clinical dataset `pngm/dataset/heart_data_set.csv`, which includes 13 input features and one target label",
     algorithms: ["Logistic Regression", "SVM", "Decision Tree", "Random Forest", "KNN"],
     functionality: [
       "collect clinical input values",
       "prepare those values as model features",
       "score heart-risk probability through the trained model",
-      "return a usable screening result in the Flask interface"
+      "return a usable screening result in the web interface"
     ],
     architecture: [
       "Collect patient medical inputs",
       "Preprocess and normalize the clinical fields",
       "Run the Random Forest prediction model",
-      "Return the risk result through the Flask interface"
+      "Return the risk result through the web interface"
     ],
-    evaluation: "The project is evaluated through multi-algorithm experimentation, saved model artifacts, notebook-backed workflow, and a working Flask delivery path instead of only a single visible score on the page.",
-    resultSnapshot: "It stands out because it combines dataset proof, notebook experimentation, multiple algorithms, a saved model file, and a working Flask app in one end-to-end story.",
+    evaluation: "The project is evaluated through multi-algorithm experimentation, saved model artifacts, notebook-backed workflow, and a polished delivery path instead of only a single visible score on the page.",
+    resultSnapshot: "It stands out because it combines dataset proof, notebook experimentation, multiple algorithms, a saved model file, and a polished interactive demo in one end-to-end story.",
     proof: [
       "the Heart-Disease-Prediction notebook",
       "the train_models.py workflow",
       "the heart_data_set.csv dataset file",
       "the saved models.pkl artifact",
-      "the live Flask app and portfolio demo"
+      "the guided portfolio demo and case study"
     ],
     limitations: "It is a project-grade screening tool, not a medically certified diagnostic system, and the UI does not yet surface calibration or explainability metrics.",
     outcome: "It demonstrates practical healthcare AI by converting a trained model into a working screening experience that can support faster awareness and triage-style thinking.",
     futureScope: "Add explainable AI, confidence reporting, clinician-friendly exports, and richer validation dashboards.",
-    demoHint: "Open the Heart Disease demo page from Projects, or launch the original local Flask app from the heart-disease demo section."
+    demoHint: "Open the Heart Disease demo page from Projects to review the walkthrough, screenshots, and guided risk preview."
   },
   "AI Study Mood Detector": {
     id: "study-mood",
@@ -813,10 +813,6 @@ const instantGlossaryReplies = [
     reply: "Java is a widely used object-oriented programming language known for portability, strong tooling, and use in backend systems, Android development, and enterprise software."
   },
   {
-    terms: ["what is flask", "define flask"],
-    reply: "Flask is a lightweight Python web framework often used for APIs, dashboards, and machine learning web apps because it is simple, flexible, and fast to build with."
-  },
-  {
     terms: ["what is random forest", "define random forest"],
     reply: "Random Forest is a machine learning algorithm that combines many decision trees and uses their combined output for stronger, more stable predictions. It is widely used for classification tasks like disease prediction."
   },
@@ -896,7 +892,7 @@ function applyPortfolioTheme(theme, options = {}) {
     button.classList.toggle("is-active", button.dataset.theme === nextTheme);
   });
 
-  syncHeartFlaskTheme(nextTheme);
+  syncHeartPreviewTheme(nextTheme);
   return nextTheme;
 }
 
@@ -1335,7 +1331,7 @@ function renderHeartDemoReport(report) {
         ? "This scenario is showing a higher-observation risk pattern and should be treated as a prompt for stronger clinical follow-up."
         : report.risk >= 40
           ? "This scenario lands in a moderate band, so trend monitoring and preventive review would be the practical next step."
-          : "This scenario currently reads lower risk in the portfolio simulator, but consistent preventive habits and professional screening still matter.";
+          : "This scenario currently reads lower risk in the interactive preview, but consistent preventive habits and professional screening still matter.";
   }
 
   flagList.innerHTML = report.flags.map((item) => `<li>${item}</li>`).join("");
@@ -1417,12 +1413,12 @@ if (heartDemoForm) {
   updateHeartDemoFromForm();
 }
 
-async function initializeHeartFlaskFrame(forceReload = false) {
-  if (!heartFlaskFrame || !heartFlaskStatus) {
+async function initializeHeartPreviewFrame(forceReload = false) {
+  if (!heartPreviewFrame || !heartPreviewStatus) {
     return;
   }
 
-  const liveAppShell = heartFlaskFrame.closest(".live-app-shell");
+  const liveAppShell = heartPreviewFrame.closest(".live-app-shell");
   const theme = getCurrentPortfolioTheme();
 
   if (!useServerChat) {
@@ -1430,39 +1426,38 @@ async function initializeHeartFlaskFrame(forceReload = false) {
       liveAppShell.hidden = Boolean(isStaticPortfolioHost);
       liveAppShell.classList.remove("is-ready");
     }
-    heartFlaskStatus.textContent = isStaticPortfolioHost
-      ? "GitHub Pages mode: portfolio simulator is active."
-      : "Run this page through server.py to load the Flask app.";
-    heartFlaskStatus.classList.add("is-error");
-    if (heartFlaskFrame) {
-      heartFlaskFrame.hidden = true;
-      heartFlaskFrame.removeAttribute("src");
+    heartPreviewStatus.textContent = isStaticPortfolioHost
+      ? "Guided preview mode is active."
+      : "Guided preview mode is active.";
+    heartPreviewStatus.classList.add("is-error");
+    if (heartPreviewFrame) {
+      heartPreviewFrame.hidden = true;
+      heartPreviewFrame.removeAttribute("src");
     }
-    if (heartFlaskReload) {
-      heartFlaskReload.hidden = true;
+    if (heartPreviewReload) {
+      heartPreviewReload.hidden = true;
     }
-    if (heartFlaskLaunch) {
-      heartFlaskLaunch.href = "heart-disease-case-study.html";
-      heartFlaskLaunch.textContent = "Open Case Study";
-      heartFlaskLaunch.removeAttribute("target");
-      heartFlaskLaunch.removeAttribute("rel");
+    if (heartPreviewLaunch) {
+      heartPreviewLaunch.href = "heart-disease-case-study.html";
+      heartPreviewLaunch.textContent = "Open Case Study";
+      heartPreviewLaunch.removeAttribute("target");
+      heartPreviewLaunch.removeAttribute("rel");
     }
-    if (heartFlaskFallback) {
-      heartFlaskFallback.innerHTML = isStaticPortfolioHost
+    if (heartPreviewFallback) {
+      heartPreviewFallback.innerHTML = isStaticPortfolioHost
         ? `
-          <strong>Static showcase mode</strong>
+          <strong>Guided demo mode</strong>
           <p>
-            GitHub Pages can publish the portfolio, case studies, and static demo experience, but the live Flask app itself runs only on your local Python setup.
-            Use the case study here, and run <code>py -3 server.py</code> locally whenever you want the full embedded app experience.
+            This GitHub Pages version keeps the intake walkthrough, report preview, screenshots, and case-study proof in one place for a smooth review experience.
           </p>
         `
         : `
-          <strong>Waiting for the local Flask app</strong>
+          <strong>Guided demo mode</strong>
           <p>
-            Open the portfolio through <code>server.py</code>. The page will try to start the local Flask app automatically and then load it here.
+            This version focuses on the guided portfolio walkthrough and the interactive risk preview.
           </p>
         `;
-      heartFlaskFallback.hidden = false;
+      heartPreviewFallback.hidden = false;
     }
     return;
   }
@@ -1470,20 +1465,20 @@ async function initializeHeartFlaskFrame(forceReload = false) {
   if (liveAppShell) {
     liveAppShell.hidden = false;
   }
-  if (heartFlaskFrame) {
-    heartFlaskFrame.hidden = false;
+  if (heartPreviewFrame) {
+    heartPreviewFrame.hidden = false;
   }
-  if (heartFlaskReload) {
-    heartFlaskReload.hidden = false;
+  if (heartPreviewReload) {
+    heartPreviewReload.hidden = false;
   }
-  if (heartFlaskLaunch) {
-    heartFlaskLaunch.textContent = "Open Fullscreen";
-    heartFlaskLaunch.target = "_blank";
-    heartFlaskLaunch.rel = "noreferrer";
+  if (heartPreviewLaunch) {
+    heartPreviewLaunch.textContent = "Open Fullscreen";
+    heartPreviewLaunch.target = "_blank";
+    heartPreviewLaunch.rel = "noreferrer";
   }
 
-  heartFlaskStatus.textContent = "Starting local Flask app...";
-  heartFlaskStatus.classList.remove("is-ready", "is-error");
+  heartPreviewStatus.textContent = "Starting guided preview...";
+  heartPreviewStatus.classList.remove("is-ready", "is-error");
 
   try {
     const response = await fetch(`/api/heart-demo-status${forceReload ? "?refresh=1" : ""}`, {
@@ -1492,109 +1487,109 @@ async function initializeHeartFlaskFrame(forceReload = false) {
     const contentType = response.headers.get("content-type") || "";
 
     if (!contentType.includes("application/json")) {
-      throw new Error("Embedded demo API is unavailable. Restart server.py, then reload this page.");
+      throw new Error("The guided preview is unavailable right now. Reload the page and try again.");
     }
 
     const payload = await response.json();
 
     if (!response.ok || !payload.running || !payload.url) {
-      throw new Error(payload.error || payload.message || "Flask app is unavailable");
+      throw new Error(payload.error || payload.message || "Live preview is unavailable");
     }
 
     const appUrl = `${payload.url}?theme=${encodeURIComponent(theme)}${forceReload ? `&t=${Date.now()}` : ""}`;
 
-    if (heartFlaskLaunch) {
-      heartFlaskLaunch.href = `${payload.url}?theme=${encodeURIComponent(theme)}`;
+    if (heartPreviewLaunch) {
+      heartPreviewLaunch.href = `${payload.url}?theme=${encodeURIComponent(theme)}`;
     }
 
-    heartFlaskFrame.src = appUrl;
-    heartFlaskStatus.textContent = payload.message || "Flask app connected";
-    heartFlaskStatus.classList.remove("is-error");
-    heartFlaskStatus.classList.add("is-ready");
+    heartPreviewFrame.src = appUrl;
+    heartPreviewStatus.textContent = payload.message || "Preview connected";
+    heartPreviewStatus.classList.remove("is-error");
+    heartPreviewStatus.classList.add("is-ready");
 
     if (liveAppShell) {
       liveAppShell.classList.add("is-ready");
     }
 
-    if (heartFlaskFallback) {
-      heartFlaskFallback.hidden = true;
+    if (heartPreviewFallback) {
+      heartPreviewFallback.hidden = true;
     }
   } catch (error) {
     if (isLocalPortfolioHost) {
       try {
-        await fetch(heartFlaskDirectUrl, { mode: "no-cors" });
+        await fetch(heartPreviewDirectUrl, { mode: "no-cors" });
       } catch (directError) {
-        heartFlaskStatus.textContent = "Flask app is not running on 127.0.0.1:5000. Restart server.py or run the local heart app manually.";
-        heartFlaskStatus.classList.remove("is-ready");
-        heartFlaskStatus.classList.add("is-error");
+        heartPreviewStatus.textContent = "The live preview is unavailable in this static version.";
+        heartPreviewStatus.classList.remove("is-ready");
+        heartPreviewStatus.classList.add("is-error");
 
         if (liveAppShell) {
           liveAppShell.classList.remove("is-ready");
         }
 
-        if (heartFlaskFallback) {
-          heartFlaskFallback.hidden = false;
+        if (heartPreviewFallback) {
+          heartPreviewFallback.hidden = false;
         }
         return;
       }
 
-      heartFlaskStatus.textContent = "Trying direct local Flask app...";
-      heartFlaskStatus.classList.remove("is-ready", "is-error");
-      heartFlaskFrame.src = `${heartFlaskDirectUrl}?theme=${encodeURIComponent(theme)}&t=${Date.now()}`;
+      heartPreviewStatus.textContent = "Loading guided preview...";
+      heartPreviewStatus.classList.remove("is-ready", "is-error");
+      heartPreviewFrame.src = `${heartPreviewDirectUrl}?theme=${encodeURIComponent(theme)}&t=${Date.now()}`;
 
-      if (heartFlaskLaunch) {
-        heartFlaskLaunch.href = `${heartFlaskDirectUrl}?theme=${encodeURIComponent(theme)}`;
+      if (heartPreviewLaunch) {
+        heartPreviewLaunch.href = `${heartPreviewDirectUrl}?theme=${encodeURIComponent(theme)}`;
       }
 
-      if (heartFlaskFallback) {
-        heartFlaskFallback.hidden = false;
+      if (heartPreviewFallback) {
+        heartPreviewFallback.hidden = false;
       }
       return;
     }
 
-    heartFlaskStatus.textContent = error.message;
-    heartFlaskStatus.classList.remove("is-ready");
-    heartFlaskStatus.classList.add("is-error");
+    heartPreviewStatus.textContent = error.message;
+    heartPreviewStatus.classList.remove("is-ready");
+    heartPreviewStatus.classList.add("is-error");
 
     if (liveAppShell) {
       liveAppShell.classList.remove("is-ready");
     }
 
-    if (heartFlaskFallback) {
-      heartFlaskFallback.hidden = false;
+    if (heartPreviewFallback) {
+      heartPreviewFallback.hidden = false;
     }
   }
 }
 
-if (heartFlaskReload) {
-  heartFlaskReload.addEventListener("click", () => {
-    initializeHeartFlaskFrame(true);
+if (heartPreviewReload) {
+  heartPreviewReload.addEventListener("click", () => {
+    initializeHeartPreviewFrame(true);
   });
 }
 
-if (heartFlaskFrame && heartFlaskStatus) {
-  heartFlaskFrame.addEventListener("load", () => {
-    if (!heartFlaskFrame.src || heartFlaskFrame.src === "about:blank") {
+if (heartPreviewFrame && heartPreviewStatus) {
+  heartPreviewFrame.addEventListener("load", () => {
+    if (!heartPreviewFrame.src || heartPreviewFrame.src === "about:blank") {
       return;
     }
 
-    const liveAppShell = heartFlaskFrame.closest(".live-app-shell");
-    heartFlaskStatus.textContent = "Heart disease Flask app loaded";
-    heartFlaskStatus.classList.remove("is-error");
-    heartFlaskStatus.classList.add("is-ready");
+    const liveAppShell = heartPreviewFrame.closest(".live-app-shell");
+    heartPreviewStatus.textContent = "Heart disease preview loaded";
+    heartPreviewStatus.classList.remove("is-error");
+    heartPreviewStatus.classList.add("is-ready");
 
     if (liveAppShell) {
       liveAppShell.classList.add("is-ready");
     }
 
-    if (heartFlaskFallback) {
-      heartFlaskFallback.hidden = true;
+    if (heartPreviewFallback) {
+      heartPreviewFallback.hidden = true;
     }
 
-    syncHeartFlaskTheme(getCurrentPortfolioTheme());
+    syncHeartPreviewTheme(getCurrentPortfolioTheme());
   });
 
-initializeHeartFlaskFrame();
+initializeHeartPreviewFrame();
 }
 
 function uniqueValues(values) {
@@ -4501,8 +4496,8 @@ function formatChatMessageContent(text, sender) {
   return blocks.map((block) => {
     const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
 
-    if (lines.length > 1 && lines.every((line) => /^[-*â€¢]\s+/.test(line))) {
-      return `<ul>${lines.map((line) => `<li>${linkifyInlineText(line.replace(/^[-*â€¢]\s+/, ""))}</li>`).join("")}</ul>`;
+    if (lines.length > 1 && lines.every((line) => /^[-*•]\s+/.test(line))) {
+      return `<ul>${lines.map((line) => `<li>${linkifyInlineText(line.replace(/^[-*•]\s+/, ""))}</li>`).join("")}</ul>`;
     }
 
     if (lines.length > 1 && lines.every((line) => /^\d+\.\s+/.test(line))) {
@@ -4982,7 +4977,7 @@ function resolveProjectIntent(message) {
     return "future";
   }
 
-  if (includesAny(message, ["platform", "mobile", "web", "android", "flask", "backend"])) {
+  if (includesAny(message, ["platform", "mobile", "web", "android"])) {
     return "platform";
   }
 
@@ -5300,9 +5295,9 @@ function getChatbotReply(input) {
   if (isPortfolioQuery && includesAny(message, ["flagship", "best project", "main project", "featured project"])) {
     const flagshipProject = getProjectById("heart-disease");
     return chooseReplyVariant("flagship-project", [
-      `${flagshipProject.name} is the flagship project because it combines a real dataset, multiple ML algorithms, notebook proof, a saved model, and a working Flask interface.`,
+      `${flagshipProject.name} is the flagship project because it combines a real dataset, multiple ML algorithms, notebook proof, a saved model, and a polished screening interface.`,
       `The flagship project is ${flagshipProject.name}. It is the strongest end-to-end story in the portfolio because it covers dataset, training, model choice, app delivery, and proof artifacts together.`,
-      `${flagshipProject.name} leads the portfolio. It stands out for its healthcare relevance, multi-model workflow, Flask deployment path, and stronger proof structure.`
+      `${flagshipProject.name} leads the portfolio. It stands out for its healthcare relevance, multi-model workflow, web delivery, and stronger proof structure.`
     ]);
   }
 
@@ -5552,17 +5547,17 @@ async function getServerChatbotReply(input) {
   let payload = null;
 
   if (!trimmedBody) {
-    throw new Error("The portfolio server returned an empty response. Restart `server.py` and try again.");
+    throw new Error("The static portfolio did not return a chatbot reply.");
   }
 
   try {
     payload = JSON.parse(trimmedBody);
   } catch (error) {
     if (trimmedBody.startsWith("<")) {
-      throw new Error("The portfolio server returned HTML instead of chat JSON. Open the site through `server.py` at `http://127.0.0.1:8000` and try again.");
+      throw new Error("The static portfolio is using its built-in chatbot knowledge for this version.");
     }
 
-    throw new Error("The portfolio server returned invalid chat data. Restart `server.py` and try again.");
+    throw new Error("The static portfolio returned invalid chatbot data.");
   }
 
   if (!response.ok) {
@@ -6693,13 +6688,13 @@ function getDemoWalkthroughSteps(key) {
       },
       {
         selector: ".live-app-shell",
-        title: "Embedded Flask app",
-        copy: "This section connects to the actual Flask experience so reviewers can inspect the real heart-disease interface."
+        title: "Input and report preview",
+        copy: "This section shows the actual intake and report screens so reviewers can understand the workflow quickly."
       },
       {
         selector: ".heart-demo-form",
-        title: "Portfolio simulator",
-        copy: "Use the quick simulator when you want a faster portfolio-side preview of the clinical risk workflow."
+        title: "Guided risk preview",
+        copy: "Use the guided preview to test values and see how the clinical risk summary responds."
       },
       {
         selector: ".demo-report-card, .heart-simulator-grid .demo-report-card",
@@ -6955,4 +6950,42 @@ initializeChatbotState();
 initializePageNavigator();
 initializeDemoWalkthroughs();
 initializePrintMode();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

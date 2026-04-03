@@ -18,7 +18,7 @@ AI / ML Concepts:
 - Model Evaluation
 
 Tools & Technologies:
-- Flask
+- Web Demo Design
 - Android Studio
 - Git and GitHub
 - Excel
@@ -31,7 +31,7 @@ Core Areas:
 PROJECTS
 Heart Disease Prediction System
 - Developed machine learning model using Random Forest
-- Built Flask-based backend for real-time prediction
+- Built an interactive web workflow for real-time prediction preview
 - Implemented secure handling of medical data
 
 AI Mood-Based Playlist Generator
@@ -63,3 +63,5 @@ CORE COMPETENCIES
 
 CAREER OBJECTIVE
 To begin my career as an AI and ML Engineer where I can apply my knowledge, gain practical experience, and contribute to innovative AI-based solutions.
+
+
