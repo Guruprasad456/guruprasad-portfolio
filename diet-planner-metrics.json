@@ -1,0 +1,9 @@
+{
+  "model": "nutrition vector recommender",
+  "dataset": "Local nutrition meal dataset",
+  "records": 14,
+  "clusters": 4,
+  "preference_match_rate": 0.8571,
+  "cluster_separation_score": 0.6897,
+  "note": "Diet planning uses a lightweight cluster-and-prototype recommender because the nutrition dataset is small and recommendation-focused."
+}

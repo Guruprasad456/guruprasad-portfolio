@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Guruprasad Potdar portfolio social preview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07131f" />
+      <stop offset="55%" stop-color="#0f2231" />
+      <stop offset="100%" stop-color="#1b2942" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb088" />
+      <stop offset="50%" stop-color="#8deede" />
+      <stop offset="100%" stop-color="#ffe490" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#bg)" />
+  <circle cx="176" cy="145" r="88" fill="url(#accent)" opacity="0.95" />
+  <rect x="70" y="312" width="1060" height="238" rx="36" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" />
+  <text x="175" y="170" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="68" font-weight="700" fill="#07131f">GP</text>
+  <text x="310" y="170" font-family="Space Grotesk, Arial, sans-serif" font-size="76" font-weight="700" fill="#f7fbff">Guruprasad Potdar</text>
+  <text x="310" y="230" font-family="Manrope, Arial, sans-serif" font-size="30" fill="#b7d4ef">AI / ML developer building practical demos, case studies, and real portfolio proof.</text>
+  <text x="118" y="380" font-family="Space Grotesk, Arial, sans-serif" font-size="28" letter-spacing="5" fill="#ffba9d">FLAGSHIP PROJECT</text>
+  <text x="118" y="438" font-family="Space Grotesk, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">Heart Disease Detection System</text>
+  <text x="118" y="490" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#d5e4f0">Flask app + model proof + dataset-backed case study + recruiter-ready portfolio presentation.</text>
+  <text x="118" y="535" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#94b9d8">Portfolio • Resume • Live demos • Case studies • Services</text>
+</svg>

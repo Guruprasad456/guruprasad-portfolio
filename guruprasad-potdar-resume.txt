@@ -1,0 +1,65 @@
+GURUPRASAD POTDAR
+Latur, Maharashtra
+Email: gurupreasadpotdar1@gmail.com
+GitHub: https://github.com/Guruprasad456
+
+PROFESSIONAL SUMMARY
+Motivated and detail-oriented AI and Machine Learning student with a strong foundation in Python, data science, and intelligent systems. Passionate about solving real-world problems using AI and continuously improving technical skills.
+
+TECHNICAL SKILLS
+Programming Languages:
+- Python
+- Java
+
+AI / ML Concepts:
+- Machine Learning
+- Deep Learning
+- Data Preprocessing
+- Model Evaluation
+
+Tools & Technologies:
+- Flask
+- Android Studio
+- Git and GitHub
+- Excel
+
+Core Areas:
+- Artificial Intelligence
+- Data Science
+- Mobile Application Development
+
+PROJECTS
+Heart Disease Prediction System
+- Developed machine learning model using Random Forest
+- Built Flask-based backend for real-time prediction
+- Implemented secure handling of medical data
+
+AI Mood-Based Playlist Generator
+- Designed system to recommend music based on user mood
+- Applied AI logic for mood detection
+- Planned integration with music APIs
+
+AI-Powered Diet Planner
+- Created personalized diet recommendation system
+- Included calorie tracking and health suggestions
+- Considered user preferences and fitness goals
+
+AI Study Mood Detector
+- Developed AI model to detect mood using camera input
+- Suggested study improvements like breaks and music
+- Focused on productivity enhancement
+
+EDUCATION
+Bachelor's Degree in Artificial Intelligence and Data Science (Pursuing)
+Currently in 2nd Year
+
+Diploma in Artificial Intelligence and Data Science (Completed)
+
+CORE COMPETENCIES
+- Problem-solving and analytical thinking
+- Fast learner and adaptable
+- Strong interest in AI development
+- Self-motivated and consistent
+
+CAREER OBJECTIVE
+To begin my career as an AI and ML Engineer where I can apply my knowledge, gain practical experience, and contribute to innovative AI-based solutions.

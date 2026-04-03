@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081D2B"/>
+      <stop offset="1" stop-color="#21112F"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="182" y1="111" x2="619" y2="379" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#72DDF7"/>
+      <stop offset=".5" stop-color="#7CF7C9"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="34" fill="url(#bg)"/>
+  <rect x="108" y="78" width="584" height="364" rx="28" fill="#0C1725" stroke="white" stroke-opacity=".08"/>
+  <rect x="136" y="108" width="324" height="304" rx="26" fill="#121F31"/>
+  <circle cx="298" cy="234" r="94" stroke="url(#ring)" stroke-width="3" stroke-dasharray="10 12"/>
+  <circle cx="298" cy="234" r="68" fill="#162638" stroke="white" stroke-opacity=".08"/>
+  <circle cx="272" cy="220" r="8" fill="#F7FAFF"/>
+  <circle cx="324" cy="220" r="8" fill="#F7FAFF"/>
+  <path d="M266 270C278 252 318 252 330 270" stroke="#7CF7C9" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="184" cy="146" r="10" fill="#72DDF7"/>
+  <circle cx="412" cy="166" r="8" fill="#C084FC"/>
+  <circle cx="180" cy="350" r="12" fill="#7CF7C9"/>
+  <rect x="488" y="108" width="176" height="132" rx="24" fill="#121F31"/>
+  <text x="512" y="153" fill="#F6FBFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Study Mood</text>
+  <text x="512" y="184" fill="#9FB5C8" font-family="Arial, sans-serif" font-size="16">Focused • Tired • Distracted</text>
+  <rect x="488" y="264" width="176" height="148" rx="24" fill="#121F31"/>
+  <rect x="514" y="296" width="116" height="12" rx="6" fill="#72DDF7" fill-opacity=".9"/>
+  <rect x="514" y="324" width="132" height="12" rx="6" fill="#F7FAFF" fill-opacity=".12"/>
+  <rect x="514" y="352" width="102" height="12" rx="6" fill="#7CF7C9" fill-opacity=".9"/>
+</svg>

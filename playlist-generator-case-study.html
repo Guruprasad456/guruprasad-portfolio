@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study for Guruprasad Potdar's mood-based playlist generator with dataset scale, audio-feature model, pipeline, results, limitations, and future scope.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Playlist Generator Case Study | Guruprasad Potdar">
+  <meta property="og:description" content="Explore the dataset-backed music recommendation case study with audio features, label accuracy, proof artifacts, and a live demo.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/playlist-generator-case-study.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>Playlist Generator Case Study | Guruprasad Potdar</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/playlist-generator-case-study.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="case-study-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="playlist-generator-demo.html">Launch Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section case-study-hero">
+        <div class="case-study-hero-copy reveal">
+          <p class="eyebrow">Case Study 04</p>
+          <h1 class="page-title">Mood-Based Playlist Generator</h1>
+          <p class="hero-text">A music recommendation concept built from labelled audio features, semantic mood mapping, and a front-end mix builder that makes the recommendation logic feel like a real curation product.</p>
+          <div class="hero-actions">
+            <a class="button" href="playlist-generator-demo.html">Open Demo</a>
+            <a class="button button-ghost" href="playlist-generator-train_model.py" target="_blank" rel="noreferrer">Open Training Script</a>
+            <a class="button button-ghost" href="playlist-generator-case-study.html?print=1" target="_blank" rel="noreferrer">Download PDF</a>
+          </div>
+        </div>
+        <aside class="case-study-hero-visual reveal">
+          <div class="case-study-image-frame">
+            <img src="playlist-generator.svg" alt="Playlist generator visual">
+          </div>
+          <div class="mini-kpi-grid">
+            <article class="mini-kpi-card">
+              <span>Train rows</span>
+              <strong>222,350</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Test rows</span>
+              <strong>55,588</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Audio features</span>
+              <strong>10</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Label accuracy</span>
+              <strong>77.41%</strong>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section premium-section">
+        <div class="case-study-grid">
+          <article class="case-study-block reveal">
+            <p class="card-label">Problem</p>
+            <p>Move beyond simple genre choice and recommend a believable playlist based on mood, energy, lyric density, and session type.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Dataset</p>
+            <p>The model uses a local 278k labelled playlist dataset with audio features like danceability, energy, loudness, speechiness, acousticness, instrumentalness, valence, and tempo.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Model</p>
+            <p>The metrics describe the engine as an <strong>audio feature centroid classifier</strong> that maps tracks into focused, happy, energetic, and reflective labels.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Pipeline</p>
+            <p>Structured audio features are normalized into centroid-based mood labels, then translated into front-end recommendation lanes and exportable playlist actions.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Results</p>
+            <p>The saved metrics report 77.41% label accuracy, which makes the project strong enough for a portfolio-grade recommendation demo with real dataset proof.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Future Scope</p>
+            <p>Add platform authentication, playlist creation APIs, user listening history, collaborative filtering, and stronger multi-language mood detection from lyrics or metadata.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Before / After Workflow</p>
+          <h2>How the project upgrades mood-based listening from guesswork to structured curation.</h2>
+        </div>
+        <div class="workflow-compare-grid">
+          <article class="workflow-card reveal">
+            <p class="card-label">Before</p>
+            <h3>Manual playlist searching</h3>
+            <ul class="detail-list">
+              <li>Users search by mood words without a structured feature route</li>
+              <li>Energy, lyric density, and session type are hard to balance together</li>
+              <li>The output is often a loose playlist instead of a curation flow</li>
+            </ul>
+          </article>
+          <article class="workflow-card reveal">
+            <p class="card-label">After</p>
+            <h3>Feature-backed mix design</h3>
+            <ul class="detail-list">
+              <li>Audio features support a repeatable mood route</li>
+              <li>The demo turns prompt + mood + platform into a cleaner mix plan</li>
+              <li>Export and sharing actions make the recommendation feel more product-ready</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="artifact-grid">
+          <a class="artifact-card reveal" href="playlist-dataset-sample.csv" target="_blank" rel="noreferrer">
+            <p class="card-label">Dataset CSV</p>
+            <h3>278k labelled songs</h3>
+            <p>Open the main labelled audio-feature dataset file used in the project.</p>
+          </a>
+          <a class="artifact-card reveal" href="playlist-metrics.json" target="_blank" rel="noreferrer">
+            <p class="card-label">Metrics JSON</p>
+            <h3>Model evaluation snapshot</h3>
+            <p>Review the saved label accuracy and semantic label mapping.</p>
+          </a>
+          <a class="artifact-card reveal" href="playlist-generator-train_model.py" target="_blank" rel="noreferrer">
+            <p class="card-label">Training Script</p>
+            <h3>Model-building workflow</h3>
+            <p>Open the training script behind the saved playlist model artifact.</p>
+          </a>
+          <a class="artifact-card reveal" href="playlist-generator-demo.html">
+            <p class="card-label">Live Demo</p>
+            <h3>Mix builder and export flow</h3>
+            <p>Launch the standalone playlist builder with copy, share, and export actions.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture Visual</p>
+          <h2>The recommendation pipeline ties a large labelled dataset to a usable mix-builder interface.</h2>
+        </div>
+        <div class="architecture-flow reveal">
+          <article class="architecture-node">
+            <span>01</span>
+            <strong>Audio Dataset</strong>
+            <p>278k labelled songs with structured feature columns</p>
+          </article>
+          <article class="architecture-node">
+            <span>02</span>
+            <strong>Feature Layer</strong>
+            <p>Danceability, energy, loudness, tempo, valence, and more</p>
+          </article>
+          <article class="architecture-node">
+            <span>03</span>
+            <strong>Classifier</strong>
+            <p>Centroid-based mood labelling and semantic route selection</p>
+          </article>
+          <article class="architecture-node">
+            <span>04</span>
+            <strong>Mix Builder</strong>
+            <p>Prompt-aware playlist suggestions with export actions</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">Feature Snapshot</p>
+            <div class="dataset-snippet">
+              <div class="dataset-row dataset-head">
+                <span>danceability</span><span>energy</span><span>speechiness</span><span>tempo</span><span>label</span>
+              </div>
+              <div class="dataset-row">
+                <span>0.611</span><span>0.614</span><span>0.0672</span><span>128.05</span><span>2</span>
+              </div>
+              <div class="dataset-row">
+                <span>0.638</span><span>0.781</span><span>0.0285</span><span>122.985</span><span>1</span>
+              </div>
+              <div class="dataset-row">
+                <span>0.560</span><span>0.810</span><span>0.0872</span><span>170.044</span><span>1</span>
+              </div>
+            </div>
+            <p class="case-study-note">Source: first rows from <code>278k_song_labelled.csv</code>.</p>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Feature Columns</p>
+            <ul class="detail-list">
+              <li>duration</li>
+              <li>danceability</li>
+              <li>energy</li>
+              <li>loudness</li>
+              <li>speechiness</li>
+              <li>acousticness</li>
+              <li>instrumentalness</li>
+              <li>liveness</li>
+              <li>valence</li>
+              <li>tempo</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">AI / ML portfolio focused on live demos, case studies, proof-backed projects, and recruiter-ready technical presentation.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+

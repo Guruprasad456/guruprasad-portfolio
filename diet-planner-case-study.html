@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study for Guruprasad Potdar's AI-Powered Diet Planner with dataset files, recommender model, pipeline, results, limitations, and future scope.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Diet Planner Case Study | Guruprasad Potdar">
+  <meta property="og:description" content="Explore the diet-planning case study with dataset-backed recommendation logic, planning pipeline, results, and proof artifacts.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/diet-planner-case-study.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>Diet Planner Case Study | Guruprasad Potdar</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/diet-planner-case-study.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="case-study-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="diet-planner-demo.html">Launch Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section case-study-hero">
+        <div class="case-study-hero-copy reveal">
+          <p class="eyebrow">Case Study 03</p>
+          <h1 class="page-title">AI-Powered Diet Planner</h1>
+          <p class="hero-text">A nutrition planning assistant built around practical adherence: calorie fit, food preference match, recommendation clustering, and a product-style planning board that turns a dataset into a usable daily structure.</p>
+          <div class="hero-actions">
+            <a class="button" href="diet-planner-demo.html">Open Demo</a>
+            <a class="button button-ghost" href="diet-planner-train_model.py" target="_blank" rel="noreferrer">Open Training Script</a>
+            <a class="button button-ghost" href="diet-planner-case-study.html?print=1" target="_blank" rel="noreferrer">Download PDF</a>
+          </div>
+        </div>
+        <aside class="case-study-hero-visual reveal">
+          <div class="case-study-image-frame">
+            <img src="diet-planner.svg" alt="Diet planner visual">
+          </div>
+          <div class="mini-kpi-grid">
+            <article class="mini-kpi-card">
+              <span>Dataset records</span>
+              <strong>14</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Clusters</span>
+              <strong>4</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Preference match</span>
+              <strong>85.71%</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Separation score</span>
+              <strong>0.6897</strong>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section premium-section">
+        <div class="case-study-grid">
+          <article class="case-study-block reveal">
+            <p class="card-label">Problem</p>
+            <p>Translate goals, restrictions, cuisine preference, exercise, and adherence signals into a meal direction that feels practical enough to follow.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Dataset</p>
+            <p>The planner uses local nutrition data from <code>daily_food_nutrition_dataset.csv</code> and recommendation data from <code>diet_recommendations_dataset.csv</code>.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Model</p>
+            <p>The metrics file describes the engine as a <strong>nutrition vector recommender</strong> with a lightweight cluster-and-prototype approach, which fits the small recommendation-focused dataset.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Pipeline</p>
+            <p>Nutrition values and diet recommendations are organized into clusters, matched against user context, then turned into a daily plan with macros, grocery hints, and execution guidance.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Results</p>
+            <p>The saved metrics report an 85.71% preference match rate and a 0.6897 cluster separation score, giving the planner enough structure to support product-style planning outputs.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Future Scope</p>
+            <p>Add a larger food database, micronutrient optimization, user history, clinical nutrition constraints, budget tracking, and explainable swaps for long-term adherence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Before / After Workflow</p>
+          <h2>How the planner improves a vague meal goal into a structured daily direction.</h2>
+        </div>
+        <div class="workflow-compare-grid">
+          <article class="workflow-card reveal">
+            <p class="card-label">Before</p>
+            <h3>Generic diet advice only</h3>
+            <ul class="detail-list">
+              <li>Users often receive broad recommendations that are hard to follow</li>
+              <li>No planning structure tied to budget, prep time, or preference</li>
+              <li>Meal execution is disconnected from the recommendation itself</li>
+            </ul>
+          </article>
+          <article class="workflow-card reveal">
+            <p class="card-label">After</p>
+            <h3>Recommendation becomes a planner</h3>
+            <ul class="detail-list">
+              <li>User intent is translated into a practical board-style plan</li>
+              <li>Cluster logic supports macros, swaps, and routine guidance</li>
+              <li>The output feels closer to a usable product than a static list</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="artifact-grid">
+          <a class="artifact-card reveal" href="diet-recommendations-dataset.csv" target="_blank" rel="noreferrer">
+            <p class="card-label">Recommendation Dataset</p>
+            <h3>Diet target records</h3>
+            <p>Open the local recommendation dataset used by the planner.</p>
+          </a>
+          <a class="artifact-card reveal" href="daily-food-nutrition-dataset.csv" target="_blank" rel="noreferrer">
+            <p class="card-label">Nutrition Dataset</p>
+            <h3>Food nutrition data</h3>
+            <p>Open the nutrition values file behind the planning logic.</p>
+          </a>
+          <a class="artifact-card reveal" href="diet-planner-metrics.json" target="_blank" rel="noreferrer">
+            <p class="card-label">Metrics JSON</p>
+            <h3>Saved planner validation</h3>
+            <p>See the local validation snapshot for the recommender.</p>
+          </a>
+          <a class="artifact-card reveal" href="diet-planner-demo.html">
+            <p class="card-label">Live Demo</p>
+            <h3>Planner board interface</h3>
+            <p>Launch the standalone planning experience with export actions.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture Visual</p>
+          <h2>The diet planner pipeline is framed like a recommendation product, not just a nutrition table.</h2>
+        </div>
+        <div class="architecture-flow reveal">
+          <article class="architecture-node">
+            <span>01</span>
+            <strong>User Brief</strong>
+            <p>Goal, diet style, calories, prep time, budget, restrictions</p>
+          </article>
+          <article class="architecture-node">
+            <span>02</span>
+            <strong>Nutrition Data</strong>
+            <p>Food values and recommendation dataset records</p>
+          </article>
+          <article class="architecture-node">
+            <span>03</span>
+            <strong>Recommender Layer</strong>
+            <p>Cluster-aware nutrition vector matching</p>
+          </article>
+          <article class="architecture-node">
+            <span>04</span>
+            <strong>Planner Output</strong>
+            <p>Meals, macros, grocery hints, and adherence advice</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">Dataset Sample</p>
+            <div class="dataset-snippet">
+              <div class="dataset-row dataset-head">
+                <span>Age</span><span>Disease</span><span>Calories</span><span>Cuisine</span><span>Recommendation</span>
+              </div>
+              <div class="dataset-row">
+                <span>56</span><span>Obesity</span><span>3079</span><span>Mexican</span><span>Balanced</span>
+              </div>
+              <div class="dataset-row">
+                <span>69</span><span>Diabetes</span><span>3032</span><span>Chinese</span><span>Low Carb</span>
+              </div>
+              <div class="dataset-row">
+                <span>46</span><span>Hypertension</span><span>1737</span><span>Chinese</span><span>Low Sodium</span>
+              </div>
+            </div>
+            <p class="case-study-note">Source: first rows from <code>diet_recommendations_dataset.csv</code>.</p>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Why the model choice fits</p>
+            <ul class="detail-list">
+              <li>The dataset is small and recommendation-oriented, so a lightweight prototype recommender is more honest than pretending to have a large deep model.</li>
+              <li>Clustering helps the UI explain meal direction and adherence trade-offs clearly.</li>
+              <li>The app behaves like a planner rather than a black-box predictor, which matches the user need.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">AI / ML portfolio focused on live demos, case studies, proof-backed projects, and recruiter-ready technical presentation.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+

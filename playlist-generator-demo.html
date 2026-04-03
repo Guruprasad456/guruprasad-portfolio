@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Interactive portfolio demo for Guruprasad Potdar's Mood-Based Playlist Generator project."
+  >
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Mood-Based Playlist Generator Demo | Guruprasad Potdar">
+  <meta property="og:description" content="Open the live portfolio demo of Guruprasad Potdar's Mood-Based Playlist Generator.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/playlist-generator-demo.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>Mood-Based Playlist Generator Demo | guruprasad-portfolio</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/playlist-generator-demo.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="demo-playlist-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="contact.html">Let's Talk</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section demo-hero-section">
+        <div class="demo-hero-grid playlist-hero-layout">
+          <div class="demo-hero-copy reveal">
+            <p class="eyebrow">Recommendation Systems Demo</p>
+            <h1 class="page-title">Mood-Based Playlist Generator with fast vibe-based mix building.</h1>
+            <p class="page-subtitle demo-hero-subtitle">
+              Pick a mood, describe the vibe, and get a cleaner playlist route with export actions.
+            </p>
+
+            <div class="demo-chip-row">
+              <span>Mood + Energy Mapping</span>
+              <span>Prompt-Aware Playlist Logic</span>
+              <span>Session-Based Lane Design</span>
+              <span>Platform Handoff</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button" href="#playlistLiveDemo">Open Playlist Studio</a>
+              <a class="button button-ghost" href="projects.html">Back to Projects</a>
+              <button class="button button-ghost" type="button" data-demo-walkthrough="playlist">Start Walkthrough</button>
+            </div>
+          </div>
+
+          <article class="page-card demo-showcase-card playlist-stage-showcase reveal">
+            <div class="demo-showcase-top">
+              <span class="card-label">Mix Stage</span>
+              <span class="demo-mini-badge">Mood + Prompt + ML</span>
+            </div>
+            <div class="playlist-stage-canvas">
+              <div class="playlist-vinyl">
+                <div class="playlist-vinyl-inner">
+                  <span>Now Mixing</span>
+                  <strong>Late Night</strong>
+                </div>
+              </div>
+              <div class="playlist-eq">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="playlist-track-chip">Calm / Mixed / Low Lyric</div>
+            </div>
+            <div class="playlist-stage-notes">
+              <article class="playlist-note-pill">
+                <span>Session</span>
+                <strong>Late Night</strong>
+              </article>
+              <article class="playlist-note-pill">
+                <span>Energy</span>
+                <strong>Low</strong>
+              </article>
+              <article class="playlist-note-pill">
+                <span>Flow</span>
+                <strong>Smooth Arc</strong>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="playlistLiveDemo">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Playlist Studio</p>
+          <h2>Describe the vibe and build the mix.</h2>
+        </div>
+
+        <div class="demo-builder-grid playlist-studio-layout">
+          <article class="page-card demo-form-card playlist-control-deck reveal">
+            <div class="demo-panel-head">
+              <div>
+                <p class="card-label">Input Controls</p>
+                <h2>Advanced playlist builder</h2>
+              </div>
+            </div>
+
+            <p class="demo-note">The prompt helps shape mood, language, and session style before the mix is built.</p>
+
+            <form class="demo-builder-form" id="playlistDemoForm">
+              <label class="field field-full">
+                <span>Playlist brief</span>
+                <textarea name="playlistPrompt" placeholder="Example: calm late-night spotify mix with soft vocals, a little Hindi-English crossover, and no harsh drops">calm late-night spotify mix with soft vocals, a little Hindi-English crossover, and no harsh drops</textarea>
+              </label>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Mood</span>
+                  <select name="mood">
+                    <option value="focused">Focused</option>
+                    <option value="calm" selected>Calm</option>
+                    <option value="happy">Happy</option>
+                    <option value="energetic">Energetic</option>
+                    <option value="reflective">Reflective</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Energy</span>
+                  <select name="energy">
+                    <option value="low" selected>Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Session</span>
+                  <select name="session">
+                    <option value="quick">Quick reset</option>
+                    <option value="study">Study</option>
+                    <option value="workout">Workout</option>
+                    <option value="lateNight" selected>Late night</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Platform</span>
+                  <select name="platform">
+                    <option value="Spotify" selected>Spotify</option>
+                    <option value="YouTube Music">YouTube Music</option>
+                    <option value="JioSaavn">JioSaavn</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Language</span>
+                  <select name="language">
+                    <option value="Mixed" selected>Mixed</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Lyric density</span>
+                  <select name="lyricDensity">
+                    <option value="minimal" selected>Minimal lyrics</option>
+                    <option value="balanced">Balanced vocals</option>
+                    <option value="full">Full vocals</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field field-full">
+                <span>Avoid keywords</span>
+                <input name="avoidKeywords" type="text" value="harsh drops, aggressive bass">
+              </label>
+
+              <div class="demo-form-actions">
+                <button class="button" type="submit">Build Mix</button>
+                <button class="button button-ghost" type="reset">Reset</button>
+              </div>
+            </form>
+          </article>
+
+          <article class="page-card demo-report-card playlist-stage-report reveal">
+            <div class="demo-result-shell">
+              <div class="demo-meta-grid">
+                <article class="demo-meta-card">
+                  <span>Mood Route</span>
+                  <strong id="playlistMoodLabel">Calm</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Energy Line</span>
+                  <strong id="playlistEnergyLabel">Soft curation</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Session Arc</span>
+                  <strong id="playlistSessionLabel">Late-night smooth arc</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Mix Mode</span>
+                  <strong id="playlistMixMode">Low-lyric night arc</strong>
+                </article>
+              </div>
+
+              <div class="demo-output-grid">
+                <article class="demo-output-card">
+                  <p class="card-label">Generated Mix</p>
+                  <div class="playlist-export-head">
+                    <div>
+                      <h3 class="playlist-generated-title" id="playlistGeneratedTitle">Calm Night Flow: Smart Mix</h3>
+                      <p id="playlistSummary">This advanced playlist concept leans calm, holds a low energy line, and builds a Mixed listening path optimized for Spotify.</p>
+                    </div>
+                    <span class="demo-mini-badge is-warning" id="playlistSourceBadge">Local recommendation preview</span>
+                  </div>
+                  <p class="demo-mini-copy" id="playlistActionNote">This Spotify mix is ready to copy, export, or open as a searchable playlist handoff.</p>
+                  <div class="demo-chip-row" id="playlistTagStrip">
+                    <span>calm</span>
+                    <span>Late-night smooth arc</span>
+                    <span>low lyric lane</span>
+                    <span>Mixed mix</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="playlist-export-card demo-output-card">
+                <div class="playlist-action-bar">
+                  <button class="button button-ghost" id="playlistCopyButton" type="button">Copy Mix</button>
+                  <button class="button button-ghost" id="playlistDownloadTxtButton" type="button">Download TXT</button>
+                  <button class="button button-ghost" id="playlistDownloadM3uButton" type="button">Download M3U</button>
+                  <button class="button button-ghost" id="playlistShareButton" type="button">Share</button>
+                  <a class="button" id="playlistOpenPlatformButton" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Open on Spotify</a>
+                </div>
+              </div>
+
+              <div class="demo-output-grid" id="playlistResultGrid">
+                <article class="demo-output-card">
+                  <h4>Lane 1: Cloudline Drift</h4>
+                  <p>Soft entry</p>
+                  <p class="demo-mini-copy">Mixed minimal-lyric direction for Spotify.</p>
+                </article>
+                <article class="demo-output-card">
+                  <h4>Lane 2: Glass Lake Echo</h4>
+                  <p>Mood tunnel</p>
+                  <p class="demo-mini-copy">Mixed minimal-lyric direction for Spotify.</p>
+                </article>
+              </div>
+
+              <details class="demo-details">
+                <summary>View Details</summary>
+                <div class="demo-details-body">
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Best Use</span>
+                      <strong id="playlistBestUse">Late-night reflection and calm flow</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Transition Style</span>
+                      <strong id="playlistTransitionStyle">Smooth crossfade arc</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Confidence</span>
+                      <strong id="playlistConfidenceLabel">Prompt-tuned mood alignment</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Source</span>
+                      <strong id="playlistModelSource">Local recommendation preview</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Model Engine</span>
+                      <strong id="playlistModelEngine">Prompt router + local ranking</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Validation</span>
+                      <strong id="playlistModelAccuracy">Awaiting classifier sync</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Ranking Confidence</span>
+                      <strong id="playlistModelConfidence">Preview ranking mode</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Coherence Score</span>
+                      <strong id="playlistCoherenceScore">82%</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <p class="card-label">Audio Fingerprint</p>
+                      <h4 id="playlistNoveltyScore">Balanced novelty</h4>
+                      <p id="playlistAudioProfile">Energy ramp is low, lyric load is minimal, hindi + english crossover is active, and the playlist is being shaped for late-night smooth arc on Spotify.</p>
+                      <ul class="demo-inline-list">
+                        <li id="playlistLanguageBlend">Hindi + English crossover</li>
+                        <li id="playlistReplayRisk">Low fatigue risk</li>
+                      </ul>
+                    </article>
+
+                    <article class="demo-output-card">
+                      <p class="card-label">Curator Logic</p>
+                      <h4>How the route is being shaped</h4>
+                      <p id="playlistCuratorLogic">The prompt is acting like a soft NLP controller, steering mood, language, and session purpose into a tighter listening route.</p>
+                      <p class="demo-mini-copy" id="playlistReasoning">The generator prioritized calm mood cues, low energy, and minimal vocal density while de-emphasizing harsh drops and aggressive bass.</p>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <p class="card-label">Lane Blueprint</p>
+                      <ul id="playlistLaneList">
+                        <li><strong>Soft entry</strong> <span>Stays smooth and cinematic for after-hours listening.</span></li>
+                        <li><strong>Mood tunnel</strong> <span>Stays smooth and cinematic for after-hours listening.</span></li>
+                      </ul>
+                    </article>
+
+                    <article class="demo-output-card">
+                      <p class="card-label">Insights</p>
+                      <ul id="playlistInsights">
+                        <li>Detected mood style: calm</li>
+                        <li>Energy target: low</li>
+                        <li>Playback context: lateNight</li>
+                        <li>Language direction: Mixed</li>
+                      </ul>
+                    </article>
+
+                    <article class="demo-output-card">
+                      <p class="card-label">Fallback Route</p>
+                      <ul id="playlistFallbackRoute">
+                        <li>If the mood feels off, drop into the calmest lane before rebuilding.</li>
+                        <li>Keep language crossover gradual so the mix still feels intentional.</li>
+                        <li>If the local route feels too safe, regenerate once with a richer vibe prompt for more variety.</li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="chatbot-widget reveal" id="chatbotWidget">
+      <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+        <span class="chatbot-toggle-mark">G</span>
+        <span class="chatbot-toggle-text">
+          <strong>Guru AI</strong>
+          <small>Ask about me...</small>
+        </span>
+        <span class="chatbot-toggle-badge">Portfolio</span>
+      </button>
+
+      <section class="chatbot-panel" id="chatbotPanel" aria-label="Portfolio chatbot" hidden>
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-brandline">
+              <span class="chatbot-status-dot" aria-hidden="true"></span>
+              <p class="chatbot-label">Portfolio Assistant</p>
+            </div>
+            <h3>Guru AI Portfolio</h3>
+            <p class="chatbot-subtitle">Projects, resume, and contact in one place.</p>
+          </div>
+          <div class="chatbot-header-actions">
+            <button class="chatbot-voice" id="chatbotVoice" type="button" aria-label="Speak latest answer">Speak</button>
+            <button class="chatbot-voice chatbot-pause" id="chatbotPause" type="button" aria-label="Pause or resume speech" disabled>Pause</button>
+            <button class="chatbot-voice chatbot-clear" id="chatbotClear" type="button" aria-label="Clear conversation">Clear</button>
+            <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chatbot">x</button>
+          </div>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+          <article class="chatbot-message bot" data-raw-text="Ask about any project, the resume, or contact details.">
+            <div class="chatbot-message-head">
+              <span class="chatbot-message-role">Assistant</span>
+              <span class="chatbot-message-time">Ready</span>
+            </div>
+            <div class="chatbot-message-content">
+              <p>Ask about any project, the resume, or contact details.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="chatbot-suggestions">
+          <button class="suggestion-chip" type="button" data-prompt="Introduce Guruprasad and summarize his profile">Profile</button>
+          <button class="suggestion-chip" type="button" data-prompt="Explain Guruprasad's projects and live demos in detail">Projects</button>
+          <button class="suggestion-chip" type="button" data-prompt="How can I contact Guruprasad?">Contact</button>
+        </div>
+
+        <form class="chatbot-form" id="chatbotForm">
+          <div class="chatbot-input-wrap">
+            <textarea
+              class="chatbot-input"
+              id="chatbotInput"
+              rows="1"
+              placeholder="Ask about Guruprasad's work, resume, demos, or contact"
+            ></textarea>
+            <p class="chatbot-composer-note">Press Enter to send. Use Shift + Enter for a new line.</p>
+          </div>
+          <div class="chatbot-form-actions">
+            <button class="button chatbot-send" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+
+
+
+

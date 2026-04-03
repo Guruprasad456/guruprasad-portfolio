@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Interactive portfolio demo for Guruprasad Potdar's AI Study Mood Detector project."
+  >
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AI Study Mood Detector Demo | Guruprasad Potdar">
+  <meta property="og:description" content="Open the live portfolio demo of Guruprasad Potdar's AI Study Mood Detector.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/study-mood-demo.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>AI Study Mood Detector Demo | guruprasad-portfolio</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/study-mood-demo.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="demo-study-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="contact.html">Let's Talk</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section demo-hero-section">
+        <div class="demo-hero-grid study-hero-layout">
+          <div class="demo-hero-copy reveal">
+            <p class="eyebrow">Productivity AI Demo</p>
+            <h1 class="page-title">AI Study Mood Detector with live focus scoring and study coaching.</h1>
+            <p class="page-subtitle demo-hero-subtitle">
+              A lighter demo that combines optional camera preview, study context, and quick coaching output.
+            </p>
+
+            <div class="demo-chip-row">
+              <span>Camera Preview</span>
+              <span>CV Signal Fusion</span>
+              <span>NLP Study Brief</span>
+              <span>Adaptive Focus Coach</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button" href="#studyMoodLiveDemo">Open Focus Lab</a>
+              <a class="button button-ghost" href="projects.html">Back to Projects</a>
+              <button class="button button-ghost" type="button" data-demo-walkthrough="study">Start Walkthrough</button>
+            </div>
+          </div>
+
+          <article class="page-card demo-showcase-card study-focus-showcase reveal">
+            <div class="demo-showcase-top">
+              <span class="card-label">Focus Radar</span>
+              <span class="demo-mini-badge">Mood + Vision + NLP</span>
+            </div>
+            <div class="study-orbit-visual">
+              <div class="study-orbit-ring ring-one"></div>
+              <div class="study-orbit-ring ring-two"></div>
+              <div class="study-orbit-ring ring-three"></div>
+              <div class="study-orbit-core">
+                <span>Live</span>
+                <strong>Focus Lab</strong>
+              </div>
+              <div class="study-orbit-node node-one">Sleep</div>
+              <div class="study-orbit-node node-two">Noise</div>
+              <div class="study-orbit-node node-three">Posture</div>
+            </div>
+            <div class="study-signal-board">
+              <article class="study-signal-pill">
+                <span>Readiness</span>
+                <strong>88%</strong>
+              </article>
+              <article class="study-signal-pill">
+                <span>Break</span>
+                <strong>20 min</strong>
+              </article>
+              <article class="study-signal-pill">
+                <span>Mode</span>
+                <strong>Deep Work</strong>
+              </article>
+            </div>
+            <div class="demo-kpi-grid study-kpi-grid">
+              <article class="demo-kpi-card">
+                <span>Sensor Layer</span>
+                <strong>Camera, posture, light</strong>
+              </article>
+              <article class="demo-kpi-card">
+                <span>Coach Output</span>
+                <strong>Actionable sprint advice</strong>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="studyMoodLiveDemo">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Focus Lab</p>
+          <h2>Run a fast focus scan with optional camera preview.</h2>
+        </div>
+
+        <div class="demo-builder-grid study-live-layout">
+          <article class="page-card demo-form-card study-lab-controls reveal">
+            <div class="demo-panel-head">
+              <div>
+                <p class="card-label">Input Signals</p>
+                <h2>Multimodal student state</h2>
+              </div>
+            </div>
+
+            <p class="demo-note">Camera preview stays local and only adds extra readiness cues when available.</p>
+
+            <div class="demo-camera-shell">
+              <div class="demo-camera-head">
+                <div>
+                  <p class="card-label">Camera Lab</p>
+                  <h3>Optional live preview</h3>
+                </div>
+                <button class="button button-ghost button-small" id="studyMoodCameraToggle" type="button">Start Camera</button>
+              </div>
+              <div class="demo-camera-preview">
+                <video id="studyMoodVideo" autoplay muted playsinline></video>
+                <canvas id="studyMoodCanvas" hidden></canvas>
+                <div class="demo-camera-overlay">
+                  <span class="demo-status-pill is-idle" id="studyMoodCameraStatus">Camera offline - using manual study signals</span>
+                  <p>Enable the preview to enrich the analysis with local lighting readiness.</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="demo-builder-form" id="studyMoodDemoForm">
+              <label class="field field-full">
+                <span>What are you studying right now?</span>
+                <textarea name="studyGoal" placeholder="Describe the task, for example: Preparing for a coding interview and solving medium-level DSA problems.">Preparing for a coding interview and solving medium-level DSA problems.</textarea>
+              </label>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Detected face state</span>
+                  <select name="faceState">
+                    <option value="focused">Focused</option>
+                    <option value="tired">Tired</option>
+                    <option value="distracted">Distracted</option>
+                    <option value="stressed">Stressed</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Sleep last night</span>
+                  <input name="sleepHours" type="number" min="3" max="10" value="7">
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Current study session (minutes)</span>
+                  <input name="sessionMinutes" type="number" min="10" max="180" value="55">
+                </label>
+
+                <label class="field">
+                  <span>Distraction level</span>
+                  <select name="distractionLevel">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Stress level</span>
+                  <select name="stressLevel">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Posture quality</span>
+                  <select name="postureQuality">
+                    <option value="aligned" selected>Aligned</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="slumped">Slumped</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Ambient noise</span>
+                <select name="ambientNoise">
+                  <option value="quiet">Quiet</option>
+                  <option value="shared" selected>Shared room</option>
+                  <option value="busy">Busy environment</option>
+                </select>
+              </label>
+
+              <div class="demo-form-actions">
+                <button class="button" type="submit">Run Scan</button>
+                <button class="button button-ghost" type="reset">Reset</button>
+              </div>
+            </form>
+          </article>
+
+          <article class="page-card demo-report-card study-lab-report reveal">
+            <div class="demo-result-shell">
+              <div class="demo-score-shell">
+                <div class="demo-score-ring">
+                  <strong id="studyMoodScore">88%</strong>
+                  <span id="studyMoodStatus">Focused</span>
+                </div>
+                <p class="demo-consensus" id="studyMoodReadiness">High-output sprint ready</p>
+              </div>
+
+              <div class="demo-meta-grid">
+                <article class="demo-meta-card">
+                  <span>Inference Confidence</span>
+                  <strong id="studyMoodConfidence">High confidence</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Break Window</span>
+                  <strong id="studyMoodBreakWindow">Next reset in 20 min</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Task Mode</span>
+                  <strong id="studyMoodTaskMode">Coding interview prep</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Camera Insight</span>
+                  <strong id="studyMoodCameraHealth">Manual mode</strong>
+                </article>
+              </div>
+
+              <article class="demo-output-card demo-action-card">
+                <div class="demo-action-card-head">
+                  <div>
+                    <h4>Coach Export</h4>
+                    <p class="demo-mini-copy" id="studyMoodExportNote">Copy the full coach report or save a plain-text snapshot of the current study state.</p>
+                  </div>
+                  <div class="demo-action-bar">
+                    <button class="button button-small button-ghost" id="studyMoodCopyButton" type="button">Copy Report</button>
+                    <button class="button button-small button-ghost" id="studyMoodDownloadButton" type="button">Download TXT</button>
+                  </div>
+                </div>
+              </article>
+
+              <div class="demo-accent-strip" id="studyMoodSignalStrip"></div>
+
+              <div class="demo-output-grid">
+                <article class="demo-output-card">
+                  <h4>Primary Action</h4>
+                  <p id="studyMoodAction">Stay in deep-work mode with a 50 minute sprint.</p>
+                </article>
+                <article class="demo-output-card">
+                  <h4>Audio Cue</h4>
+                  <p id="studyMoodAudio">Instrumental focus playlist with low-distraction ambient sound.</p>
+                </article>
+                <article class="demo-output-card">
+                  <h4>Task Insight</h4>
+                  <p id="studyMoodNlpInsight">The study brief suggests a structured problem-solving session that benefits from timed sprints.</p>
+                </article>
+                <article class="demo-output-card">
+                  <h4>Coach Summary</h4>
+                  <p id="studyMoodCoachSummary">The assistant sees a strong focus window and recommends continuing with one high-priority task.</p>
+                </article>
+              </div>
+
+              <details class="demo-details">
+                <summary>View Details</summary>
+                <div class="demo-details-body">
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Environment Score</span>
+                      <strong id="studyMoodEnvironmentScore">81%</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Recovery Load</span>
+                      <strong id="studyMoodRecoveryScore">Low recovery demand</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Next Sprint</span>
+                      <strong id="studyMoodSprintPlan">45 min protected block</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Attention Stability</span>
+                      <strong id="studyMoodAttentionScore">84%</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Cognitive Load</span>
+                      <strong id="studyMoodLoadScore">Focused but manageable</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Drift Risk</span>
+                      <strong id="studyMoodDriftRisk">Moderate drift risk</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Intervention Profile</span>
+                      <strong id="studyMoodInterventionProfile">Protected deep-work mode</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Model Engine</span>
+                      <strong id="studyMoodModelEngine">Visual centroid ensemble</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Visual Emotion</span>
+                      <strong id="studyMoodVisualEmotion">Manual baseline</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Validation Score</span>
+                      <strong id="studyMoodValidation">31.4% broad-state accuracy</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Signal Source</span>
+                      <strong id="studyMoodSignalSource">Manual study signals</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <h4>Technique</h4>
+                      <p id="studyMoodTechnique">Use a single-task timer and avoid app switching during the sprint.</p>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Vision Readiness</h4>
+                      <p id="studyMoodCameraInsight">Camera is currently off, so the report is relying on manual state inputs.</p>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Model Reasoning</h4>
+                      <p id="studyMoodModelReasoning">The score is being driven by stable sleep, a manageable session length, and a task brief that matches a structured deep-work sprint.</p>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <h4>Signal Drivers</h4>
+                      <ul class="demo-inline-list" id="studyMoodDriverList"></ul>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Recovery Protocol</h4>
+                      <ul class="demo-inline-list" id="studyMoodRecoveryProtocol"></ul>
+                    </article>
+                  </div>
+
+                  <article class="demo-output-card">
+                    <h4>Intervention Sequence</h4>
+                    <ol class="demo-roadmap-list" id="studyMoodPlan"></ol>
+                  </article>
+
+                  <ul class="demo-result-list" id="studyMoodTips"></ul>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="chatbot-widget reveal" id="chatbotWidget">
+      <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+        <span class="chatbot-toggle-mark">G</span>
+        <span class="chatbot-toggle-text">
+          <strong>Guru AI</strong>
+          <small>Ask about me...</small>
+        </span>
+        <span class="chatbot-toggle-badge">Portfolio</span>
+      </button>
+
+      <section class="chatbot-panel" id="chatbotPanel" aria-label="Portfolio chatbot" hidden>
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-brandline">
+              <span class="chatbot-status-dot" aria-hidden="true"></span>
+              <p class="chatbot-label">Portfolio Assistant</p>
+            </div>
+            <h3>Guru AI Portfolio</h3>
+            <p class="chatbot-subtitle">Projects, resume, and contact in one place.</p>
+          </div>
+          <div class="chatbot-header-actions">
+            <button class="chatbot-voice" id="chatbotVoice" type="button" aria-label="Speak latest answer">Speak</button>
+            <button class="chatbot-voice chatbot-pause" id="chatbotPause" type="button" aria-label="Pause or resume speech" disabled>Pause</button>
+            <button class="chatbot-voice chatbot-clear" id="chatbotClear" type="button" aria-label="Clear conversation">Clear</button>
+            <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chatbot">x</button>
+          </div>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+          <article class="chatbot-message bot" data-raw-text="Ask about any project, the resume, or contact details.">
+            <div class="chatbot-message-head">
+              <span class="chatbot-message-role">Assistant</span>
+              <span class="chatbot-message-time">Ready</span>
+            </div>
+            <div class="chatbot-message-content">
+              <p>Ask about any project, the resume, or contact details.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="chatbot-suggestions">
+          <button class="suggestion-chip" type="button" data-prompt="Introduce Guruprasad and summarize his profile">Profile</button>
+          <button class="suggestion-chip" type="button" data-prompt="Explain Guruprasad's projects and live demos in detail">Projects</button>
+          <button class="suggestion-chip" type="button" data-prompt="How can I contact Guruprasad?">Contact</button>
+        </div>
+
+        <form class="chatbot-form" id="chatbotForm">
+          <div class="chatbot-input-wrap">
+            <textarea
+              class="chatbot-input"
+              id="chatbotInput"
+              rows="1"
+              placeholder="Ask about Guruprasad's work, resume, demos, or contact"
+            ></textarea>
+            <p class="chatbot-composer-note">Press Enter to send. Use Shift + Enter for a new line.</p>
+          </div>
+          <div class="chatbot-form-actions">
+            <button class="button chatbot-send" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">ML Developer and Data Scientist building practical AI systems, modern interfaces, and portfolio-ready project experiences.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

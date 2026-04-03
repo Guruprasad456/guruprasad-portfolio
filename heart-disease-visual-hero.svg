@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="40" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#130E25"/>
+      <stop offset="0.5" stop-color="#0C1E34"/>
+      <stop offset="1" stop-color="#081826"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="120" y1="110" x2="1150" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#201437"/>
+      <stop offset="1" stop-color="#10283B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="270" y1="250" x2="910" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B7A"/>
+      <stop offset="0.42" stop-color="#FFC857"/>
+      <stop offset="1" stop-color="#72F7D4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(955 170) rotate(90) scale(180 240)">
+      <stop stop-color="#72F7D4" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#72F7D4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="34" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="180" cy="110" r="82" fill="#FF6B7A" fill-opacity="0.1"/>
+  <circle cx="1120" cy="620" r="130" fill="#72F7D4" fill-opacity="0.08"/>
+  <ellipse cx="955" cy="170" rx="240" ry="180" fill="url(#glow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="88" width="1112" height="544" rx="34" fill="url(#panel)" stroke="rgba(255,255,255,0.08)"/>
+  </g>
+
+  <text x="146" y="166" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="26" letter-spacing="5">HEALTHCARE AI FLAGSHIP</text>
+  <text x="146" y="236" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="62" font-weight="700">Heart Disease Detection</text>
+  <text x="146" y="302" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="62" font-weight="700">System</text>
+  <text x="146" y="350" fill="#9CB5C9" font-family="Arial, sans-serif" font-size="26">Machine learning driven clinical risk screening with Flask delivery,</text>
+  <text x="146" y="388" fill="#9CB5C9" font-family="Arial, sans-serif" font-size="26">multi-model evaluation, and report-style output design.</text>
+
+  <g opacity="0.9">
+    <rect x="146" y="440" width="232" height="64" rx="20" fill="url(#accent)"/>
+    <text x="180" y="482" fill="#08131F" font-family="Arial, sans-serif" font-size="24" font-weight="700">Clinical Screening</text>
+    <rect x="400" y="440" width="198" height="64" rx="20" fill="#F7FAFF" fill-opacity="0.1" stroke="rgba(255,255,255,0.12)"/>
+    <text x="446" y="482" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Flask App</text>
+  </g>
+
+  <g transform="translate(734 124)">
+    <rect width="372" height="462" rx="30" fill="#0E1824" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="28" y="28" width="316" height="174" rx="24" fill="#101D2A" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M54 122H94L120 76L162 178L208 96H262L286 122H316" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="126" cy="74" r="22" fill="#FF6B7A" fill-opacity="0.18"/>
+    <path d="M126 94C106 84 98 63 110 50C117 43 128 45 134 54C140 45 151 43 158 50C170 63 162 84 142 94L134 100L126 94Z" fill="#FF6B7A"/>
+
+    <rect x="28" y="226" width="150" height="96" rx="22" fill="#101D2A"/>
+    <text x="50" y="262" fill="#95ACC4" font-family="Arial, sans-serif" font-size="16">RISK ENGINE</text>
+    <text x="50" y="298" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Random Forest</text>
+
+    <rect x="194" y="226" width="150" height="96" rx="22" fill="#101D2A"/>
+    <text x="216" y="262" fill="#95ACC4" font-family="Arial, sans-serif" font-size="16">MODE</text>
+    <text x="216" y="298" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Live Demo</text>
+
+    <rect x="28" y="342" width="316" height="92" rx="22" fill="#101D2A"/>
+    <text x="50" y="378" fill="#95ACC4" font-family="Arial, sans-serif" font-size="16">MODEL STACK</text>
+    <text x="50" y="414" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Logistic, SVM, Tree, Forest, KNN</text>
+  </g>
+</svg>

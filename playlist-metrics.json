@@ -1,0 +1,26 @@
+{
+  "model": "audio feature centroid classifier",
+  "dataset": "278k labelled playlist dataset",
+  "feature_columns": [
+    "duration (ms)",
+    "danceability",
+    "energy",
+    "loudness",
+    "speechiness",
+    "acousticness",
+    "instrumentalness",
+    "liveness",
+    "valence",
+    "tempo"
+  ],
+  "train_rows": 222350,
+  "test_rows": 55588,
+  "label_accuracy": 0.7741,
+  "semantic_labels": {
+    "0": "focused",
+    "1": "happy",
+    "2": "energetic",
+    "3": "reflective"
+  },
+  "note": "Mood semantics are inferred from centroid audio profiles and mapped onto the playlist demo vocabulary."
+}

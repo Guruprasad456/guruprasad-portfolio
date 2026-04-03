@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="90" y1="30" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E0E21"/>
+      <stop offset="0.45" stop-color="#13243A"/>
+      <stop offset="1" stop-color="#0B1826"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="160" y1="160" x2="1040" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A76"/>
+      <stop offset="0.38" stop-color="#FFD166"/>
+      <stop offset="1" stop-color="#6CE5FF"/>
+    </linearGradient>
+    <filter id="panelShadow" x="72" y="74" width="1136" height="588" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="34" fill="url(#bg2)"/>
+  <circle cx="174" cy="562" r="146" fill="#FFD166" fill-opacity="0.08"/>
+  <circle cx="1090" cy="142" r="110" fill="#6CE5FF" fill-opacity="0.1"/>
+
+  <g filter="url(#panelShadow)">
+    <rect x="96" y="98" width="1088" height="540" rx="34" fill="#0E1824" stroke="rgba(255,255,255,0.08)"/>
+  </g>
+
+  <text x="136" y="156" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="48" font-weight="700">Heart Disease Detection Dashboard</text>
+  <text x="136" y="198" fill="#9AB3C7" font-family="Arial, sans-serif" font-size="22">Clinical intake, model scoring, and report-ready review surface</text>
+
+  <rect x="136" y="240" width="428" height="320" rx="28" fill="#101D2A" stroke="rgba(255,255,255,0.08)"/>
+  <text x="168" y="286" fill="#97ABC2" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">LIVE ECG SIGNAL</text>
+  <path d="M176 420H238L268 344L316 502L360 386H428L464 420L524 420" stroke="url(#cyanAccent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 354H212L236 322L274 398L312 338H360L384 354L524 354" stroke="#F7FAFF" stroke-opacity="0.14" stroke-width="6" stroke-linecap="round"/>
+  <rect x="168" y="466" width="112" height="58" rx="18" fill="#0B1420"/>
+  <text x="190" y="490" fill="#91AAC1" font-family="Arial, sans-serif" font-size="14">MODEL</text>
+  <text x="190" y="515" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Ensemble</text>
+  <rect x="298" y="466" width="112" height="58" rx="18" fill="#0B1420"/>
+  <text x="320" y="490" fill="#91AAC1" font-family="Arial, sans-serif" font-size="14">OUTPUT</text>
+  <text x="320" y="515" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Report</text>
+  <rect x="428" y="466" width="104" height="58" rx="18" fill="#0B1420"/>
+  <text x="451" y="490" fill="#91AAC1" font-family="Arial, sans-serif" font-size="14">MODE</text>
+  <text x="451" y="515" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Live</text>
+
+  <rect x="594" y="240" width="260" height="144" rx="26" fill="#101D2A" stroke="rgba(255,255,255,0.08)"/>
+  <text x="626" y="282" fill="#91AAC1" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">INPUT FEATURES</text>
+  <text x="626" y="324" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Age, chest pain,</text>
+  <text x="626" y="356" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">BP, cholesterol, ECG</text>
+
+  <rect x="882" y="240" width="262" height="144" rx="26" fill="#101D2A" stroke="rgba(255,255,255,0.08)"/>
+  <text x="914" y="282" fill="#91AAC1" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">ALGORITHMS</text>
+  <text x="914" y="324" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Logistic, SVM,</text>
+  <text x="914" y="356" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Tree, Forest, KNN</text>
+
+  <rect x="594" y="414" width="550" height="146" rx="26" fill="#101D2A" stroke="rgba(255,255,255,0.08)"/>
+  <text x="626" y="456" fill="#91AAC1" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">SCREENING SUMMARY</text>
+  <rect x="626" y="488" width="202" height="12" rx="6" fill="url(#cyanAccent)"/>
+  <rect x="626" y="516" width="314" height="12" rx="6" fill="#F7FAFF" fill-opacity="0.12"/>
+  <rect x="626" y="544" width="248" height="12" rx="6" fill="#F7FAFF" fill-opacity="0.12"/>
+  <text x="982" y="508" fill="#FFD166" font-family="Arial, sans-serif" font-size="22" font-weight="700">Predict. Explain. Review.</text>
+</svg>

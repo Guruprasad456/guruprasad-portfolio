@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study for Guruprasad Potdar's AI Study Mood Detector with dataset details, model pipeline, confusion matrix, limitations, and future scope.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AI Study Mood Detector Case Study | Guruprasad Potdar">
+  <meta property="og:description" content="Explore the dataset-backed study-state case study with image dataset, centroid ensemble model, confusion matrix, and live demo.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/study-mood-case-study.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>Study Mood Case Study | Guruprasad Potdar</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/study-mood-case-study.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="case-study-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="study-mood-demo.html">Launch Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section case-study-hero">
+        <div class="case-study-hero-copy reveal">
+          <p class="eyebrow">Case Study 02</p>
+          <h1 class="page-title">AI Study Mood Detector</h1>
+          <p class="hero-text">A study-support concept built on an image dataset, mapped into broader focus states, then translated into a live coaching interface with camera readiness, task parsing, and recovery recommendations.</p>
+          <div class="hero-actions">
+            <a class="button" href="study-mood-demo.html">Open Demo</a>
+            <a class="button button-ghost" href="study-mood-train_model.py" target="_blank" rel="noreferrer">Open Training Script</a>
+            <a class="button button-ghost" href="study-mood-case-study.html?print=1" target="_blank" rel="noreferrer">Download PDF</a>
+          </div>
+        </div>
+        <aside class="case-study-hero-visual reveal">
+          <div class="case-study-image-frame">
+            <img src="study-mood-detector.svg" alt="AI Study Mood Detector visual">
+          </div>
+          <div class="mini-kpi-grid">
+            <article class="mini-kpi-card">
+              <span>Train images</span>
+              <strong>28,709</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Test images</span>
+              <strong>7,178</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Mapped states</span>
+              <strong>4</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Broad-state accuracy</span>
+              <strong>31.37%</strong>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section premium-section">
+        <div class="case-study-grid">
+          <article class="case-study-block reveal">
+            <p class="card-label">Problem</p>
+            <p>Go beyond static mood detection and create a product that can help students decide whether to focus, reset, simplify the task, or change the environment.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Dataset</p>
+            <p>The model uses the local image dataset stored under <code>study-mood-app/study mood generator dataset</code>, then maps seven emotional classes into four broader study states: focused, tired, distracted, and stressed.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Model</p>
+            <p>The saved metrics identify the model as a <strong>visual centroid ensemble</strong> using 20 x 20 images and a 1265-length feature representation.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Pipeline</p>
+            <p>Dataset images are resized, transformed into compact visual features, mapped from emotion labels into study-state labels, scored by the ensemble, and then used by the demo to generate intervention guidance.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Results</p>
+            <p>The current measured accuracy is 31.37% on the broad state mapping. That makes this a learning-forward productivity AI prototype, not a finished emotion-recognition product.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Future Scope</p>
+            <p>Add stronger CNN-based vision, temporal face-state tracking, user-specific calibration, attention markers, and more reliable environment fusion from audio and brightness signals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Before / After Workflow</p>
+          <h2>How the project moves from passive observation to usable coaching.</h2>
+        </div>
+        <div class="workflow-compare-grid">
+          <article class="workflow-card reveal">
+            <p class="card-label">Before</p>
+            <h3>Study state is hard to track</h3>
+            <ul class="detail-list">
+              <li>Students guess whether they are focused, tired, or overloaded</li>
+              <li>No structured coaching output from visual signals</li>
+              <li>Mood labels alone are not practical enough to act on</li>
+            </ul>
+          </article>
+          <article class="workflow-card reveal">
+            <p class="card-label">After</p>
+            <h3>State + intervention guidance</h3>
+            <ul class="detail-list">
+              <li>Image states are mapped into broader study-ready categories</li>
+              <li>The demo turns state + context into sprint advice and recovery actions</li>
+              <li>Metrics, confusion proof, and live signals support the prototype story</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="artifact-grid">
+          <a class="artifact-card reveal" href="study-mood-train_model.py" target="_blank" rel="noreferrer">
+            <p class="card-label">Training Script</p>
+            <h3>Model-building workflow</h3>
+            <p>Review the app-level training logic used to build the saved ensemble artifacts.</p>
+          </a>
+          <a class="artifact-card reveal" href="study-mood-metrics.json" target="_blank" rel="noreferrer">
+            <p class="card-label">Metrics JSON</p>
+            <h3>Saved validation summary</h3>
+            <p>Open the local metrics file containing accuracy, confusion values, and label mapping.</p>
+          </a>
+          <a class="artifact-card reveal" href="study-mood-sample.png" target="_blank" rel="noreferrer">
+            <p class="card-label">Sample Image</p>
+            <h3>Dataset image proof</h3>
+            <p>Open one test image directly from the local dataset folder.</p>
+          </a>
+          <a class="artifact-card reveal" href="study-mood-demo.html">
+            <p class="card-label">Live Demo</p>
+            <h3>Interactive focus coach</h3>
+            <p>Launch the standalone study-support demo app.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture Visual</p>
+          <h2>The state-coaching pipeline is simple enough to explain and inspect quickly.</h2>
+        </div>
+        <div class="architecture-flow reveal">
+          <article class="architecture-node">
+            <span>01</span>
+            <strong>Image Dataset</strong>
+            <p>Emotion-labelled images stored locally</p>
+          </article>
+          <article class="architecture-node">
+            <span>02</span>
+            <strong>Feature Layer</strong>
+            <p>20 x 20 visual features transformed into compact vectors</p>
+          </article>
+          <article class="architecture-node">
+            <span>03</span>
+            <strong>State Mapping</strong>
+            <p>Seven emotions compressed into four study states</p>
+          </article>
+          <article class="architecture-node">
+            <span>04</span>
+            <strong>Coach Output</strong>
+            <p>Readiness score, break window, and recovery suggestions</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">State Mapping</p>
+            <ul class="detail-list">
+              <li>happy + neutral â†’ focused</li>
+              <li>sad â†’ tired</li>
+              <li>surprised + disgusted â†’ distracted</li>
+              <li>angry + fearful â†’ stressed</li>
+            </ul>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Confusion Matrix Snapshot</p>
+            <div class="matrix-table">
+              <div class="matrix-row matrix-head">
+                <span>State</span><span>Focused</span><span>Tired</span><span>Distracted</span><span>Stressed</span>
+              </div>
+              <div class="matrix-row">
+                <span>Focused</span><span>249</span><span>74</span><span>276</span><span>2408</span>
+              </div>
+              <div class="matrix-row">
+                <span>Tired</span><span>33</span><span>72</span><span>60</span><span>1082</span>
+              </div>
+              <div class="matrix-row">
+                <span>Distracted</span><span>22</span><span>7</span><span>288</span><span>625</span>
+              </div>
+              <div class="matrix-row">
+                <span>Stressed</span><span>59</span><span>62</span><span>218</span><span>1643</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">Limitations</p>
+            <ul class="detail-list">
+              <li>Accuracy remains modest, so the current version should be seen as a coaching prototype.</li>
+              <li>The state mapping compresses seven emotions into four study states, which improves usefulness but removes nuance.</li>
+              <li>The demo combines model-backed logic with product heuristics to stay practical in-browser.</li>
+            </ul>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Where It Can Grow</p>
+            <ul class="detail-list">
+              <li>Real webcam inference with stronger face embeddings or CNN features.</li>
+              <li>Audio/noise fusion, historical focus tracking, and personalized study baselines.</li>
+              <li>Clearer evaluation on new student-specific or classroom-style datasets.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">AI / ML portfolio focused on live demos, case studies, proof-backed projects, and recruiter-ready technical presentation.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+

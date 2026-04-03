@@ -1,0 +1,57 @@
+{
+  "model": "visual centroid ensemble",
+  "dataset": "Study Mood Generator image dataset",
+  "image_size": [
+    20,
+    20
+  ],
+  "feature_size": 1265,
+  "train_images": 28709,
+  "test_images": 7178,
+  "state_accuracy": 0.3137,
+  "emotion_counts": {
+    "angry": 3995,
+    "disgusted": 436,
+    "fearful": 4097,
+    "happy": 7215,
+    "neutral": 4965,
+    "sad": 4830,
+    "surprised": 3171
+  },
+  "state_mapping": {
+    "happy": "focused",
+    "neutral": "focused",
+    "sad": "tired",
+    "surprised": "distracted",
+    "disgusted": "distracted",
+    "angry": "stressed",
+    "fearful": "stressed"
+  },
+  "confusion": {
+    "focused": {
+      "focused": 249,
+      "tired": 74,
+      "distracted": 276,
+      "stressed": 2408
+    },
+    "tired": {
+      "focused": 33,
+      "tired": 72,
+      "distracted": 60,
+      "stressed": 1082
+    },
+    "distracted": {
+      "focused": 22,
+      "tired": 7,
+      "distracted": 288,
+      "stressed": 625
+    },
+    "stressed": {
+      "focused": 59,
+      "tired": 62,
+      "distracted": 218,
+      "stressed": 1643
+    }
+  },
+  "note": "Accuracy is measured on the broader study-state mapping, not the original 7-class emotion labels."
+}

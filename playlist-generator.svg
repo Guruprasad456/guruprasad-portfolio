@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#150D28"/>
+      <stop offset="1" stop-color="#081A28"/>
+    </linearGradient>
+    <linearGradient id="disc" x1="176" y1="132" x2="338" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D28CFF"/>
+      <stop offset=".5" stop-color="#72DDF7"/>
+      <stop offset="1" stop-color="#FFC371"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="34" fill="url(#bg)"/>
+  <rect x="98" y="74" width="604" height="372" rx="30" fill="#0B1422" stroke="white" stroke-opacity=".08"/>
+  <circle cx="252" cy="260" r="108" fill="url(#disc)"/>
+  <circle cx="252" cy="260" r="48" fill="#0B1422"/>
+  <circle cx="252" cy="260" r="12" fill="#F7FAFF"/>
+  <rect x="404" y="108" width="248" height="116" rx="24" fill="#101B2B"/>
+  <text x="430" y="154" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Playlist Generator</text>
+  <text x="430" y="186" fill="#AABDD1" font-family="Arial, sans-serif" font-size="16">Mood-based music recommendations</text>
+  <rect x="404" y="248" width="248" height="168" rx="24" fill="#101B2B"/>
+  <g fill="url(#disc)">
+    <rect x="430" y="360" width="14" height="24" rx="7"/>
+    <rect x="454" y="332" width="14" height="52" rx="7"/>
+    <rect x="478" y="314" width="14" height="70" rx="7"/>
+    <rect x="502" y="340" width="14" height="44" rx="7"/>
+    <rect x="526" y="298" width="14" height="86" rx="7"/>
+    <rect x="550" y="326" width="14" height="58" rx="7"/>
+  </g>
+  <path d="M430 286C468 256 515 256 554 286C592 316 610 316 630 296" stroke="#F7FAFF" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>
+</svg>

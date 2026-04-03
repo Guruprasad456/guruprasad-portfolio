@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flagship case study for Guruprasad Potdar's Heart Disease Detection System, including dataset, model stack, pipeline, proof artifacts, limitations, and future scope.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Heart Disease Detection Case Study | Guruprasad Potdar">
+  <meta property="og:description" content="Explore the flagship healthcare ML case study: Flask app, dataset, model stack, pipeline, artifacts, and delivery story.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/heart-disease-case-study.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>Heart Disease Case Study | Guruprasad Potdar</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/heart-disease-case-study.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="case-study-page case-study-heart">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="heart-disease-demo.html">Launch Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section case-study-hero">
+        <div class="case-study-hero-copy reveal">
+          <p class="eyebrow">Flagship Project</p>
+          <h1 class="page-title">Heart Disease Detection System</h1>
+          <p class="hero-text">A healthcare ML workflow that combines structured clinical inputs, multi-model experimentation, and a Flask-based screening experience designed to feel useful to a reviewer, not just technically correct in isolation.</p>
+          <div class="hero-actions">
+            <a class="button" href="heart-disease-demo.html">Open Portfolio Demo</a>
+            <a class="button button-ghost" href="pngm/Heart-Disease-Prediction.ipynb" target="_blank" rel="noreferrer">Open Notebook File</a>
+            <a class="button button-ghost" href="heart-disease-case-study.html?print=1" target="_blank" rel="noreferrer">Download PDF</a>
+          </div>
+        </div>
+        <aside class="case-study-hero-visual reveal">
+          <div class="case-study-image-frame">
+            <img src="heart-disease-project.svg" alt="Heart disease project visual">
+          </div>
+          <div class="mini-kpi-grid">
+            <article class="mini-kpi-card">
+              <span>Algorithms tested</span>
+              <strong>5</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Interface stack</span>
+              <strong>Flask + HTML/CSS</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Dataset proof</span>
+              <strong>heart_data_set.csv</strong>
+            </article>
+            <article class="mini-kpi-card">
+              <span>Deliverables</span>
+              <strong>Notebook + model + web app</strong>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section premium-section">
+        <div class="case-study-grid">
+          <article class="case-study-block reveal">
+            <p class="card-label">Problem</p>
+            <p>Build a screening flow that can take basic patient features such as age, chest pain type, cholesterol, blood pressure, and ECG-linked inputs, then produce a clear heart-disease prediction in a usable web interface.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Dataset</p>
+            <p>The project uses a structured tabular dataset stored locally as <code>pngm/dataset/heart_data_set.csv</code> with 13 input features and one target label for heart-disease prediction.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Model</p>
+            <p>Multiple classical ML algorithms were explored: Logistic Regression, SVM, Decision Tree, Random Forest, and KNN. The portfolio demo is currently presented around the Random Forest workflow because it fits the decision-support story best.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Pipeline</p>
+            <p>Clinical inputs are captured through the Flask form, cleaned and mapped into model features, passed through the trained estimator, and returned as a prediction/report-style result for the user.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Results</p>
+            <p>The strongest proof here is not just a score card. It is the combination of trained artifacts, notebook workflow, multiple algorithms, a saved model file, and a working Flask interface that produces printable output.</p>
+          </article>
+          <article class="case-study-block reveal">
+            <p class="card-label">Future Scope</p>
+            <p>Add calibration metrics, SHAP-style explainability, patient-history support, doctor-facing dashboards, and secure hosted deployment for a more clinically credible screening assistant.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Before / After Workflow</p>
+          <h2>How the project improves a manual screening flow.</h2>
+        </div>
+        <div class="workflow-compare-grid">
+          <article class="workflow-card reveal">
+            <p class="card-label">Before</p>
+            <h3>Manual interpretation only</h3>
+            <ul class="detail-list">
+              <li>Clinical values stay scattered across separate fields and reports</li>
+              <li>No quick prototype for screening-style prediction review</li>
+              <li>Harder for non-technical reviewers to see a usable workflow</li>
+            </ul>
+          </article>
+          <article class="workflow-card reveal">
+            <p class="card-label">After</p>
+            <h3>Model-backed screening console</h3>
+            <ul class="detail-list">
+              <li>Inputs move through a trained ML workflow</li>
+              <li>Prediction is returned in a cleaner report-style interface</li>
+              <li>Notebook, training script, dataset, and Flask app create a full proof path</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project Proof</p>
+          <h2>Artifacts that show this is a real build, not just a concept slide.</h2>
+        </div>
+        <div class="artifact-grid">
+          <a class="artifact-card reveal" href="pngm/Heart-Disease-Prediction.ipynb" target="_blank" rel="noreferrer">
+            <p class="card-label">Notebook</p>
+            <h3>Model experimentation notebook</h3>
+            <p>Open the local Jupyter notebook used to train and compare the algorithms.</p>
+          </a>
+          <a class="artifact-card reveal" href="pngm/train_models.py" target="_blank" rel="noreferrer">
+            <p class="card-label">Training Script</p>
+            <h3>Reproducible training flow</h3>
+            <p>See the project-side model training script used to prepare the saved model.</p>
+          </a>
+          <a class="artifact-card reveal" href="pngm/dataset/heart_data_set.csv" target="_blank" rel="noreferrer">
+            <p class="card-label">Dataset File</p>
+            <h3>Clinical feature dataset</h3>
+            <p>Open the tabular dataset file used by the heart-disease project.</p>
+          </a>
+          <a class="artifact-card reveal" href="heart-disease-demo.html">
+            <p class="card-label">Live Demo</p>
+            <h3>Portfolio-facing experience</h3>
+            <p>Launch the flagship case-study demo and access the embedded Flask app experience.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Architecture Visual</p>
+          <h2>A simple pipeline diagram makes the workflow easier to assess fast.</h2>
+        </div>
+        <div class="architecture-flow reveal">
+          <article class="architecture-node">
+            <span>01</span>
+            <strong>Clinical Inputs</strong>
+            <p>Age, chest pain, cholesterol, BP, ECG-linked values</p>
+          </article>
+          <article class="architecture-node">
+            <span>02</span>
+            <strong>Feature Mapping</strong>
+            <p>Input cleaning, field mapping, model-ready formatting</p>
+          </article>
+          <article class="architecture-node">
+            <span>03</span>
+            <strong>Model Layer</strong>
+            <p>Logistic, SVM, Tree, Forest, and KNN comparisons</p>
+          </article>
+          <article class="architecture-node">
+            <span>04</span>
+            <strong>Report Output</strong>
+            <p>Prediction summary, flags, and printable review path</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Model Story</p>
+          <h2>How the technical work translates into a credible screening product.</h2>
+        </div>
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">Model Stack</p>
+            <div class="result-table">
+              <div class="result-table-row result-table-head">
+                <span>Algorithm</span>
+                <span>Role in project</span>
+              </div>
+              <div class="result-table-row">
+                <span>Logistic Regression</span>
+                <span>Baseline linear classifier</span>
+              </div>
+              <div class="result-table-row">
+                <span>SVM</span>
+                <span>Margin-based comparison model</span>
+              </div>
+              <div class="result-table-row">
+                <span>Decision Tree</span>
+                <span>Readable branching benchmark</span>
+              </div>
+              <div class="result-table-row">
+                <span>Random Forest</span>
+                <span>Primary presentation model for demo flow</span>
+              </div>
+              <div class="result-table-row">
+                <span>KNN</span>
+                <span>Distance-based benchmark</span>
+              </div>
+            </div>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Dataset Sample</p>
+            <div class="dataset-snippet">
+              <div class="dataset-row dataset-head">
+                <span>age</span>
+                <span>cp</span>
+                <span>chol</span>
+                <span>thalach</span>
+                <span>target</span>
+              </div>
+              <div class="dataset-row">
+                <span>52</span>
+                <span>0</span>
+                <span>212</span>
+                <span>168</span>
+                <span>0</span>
+              </div>
+              <div class="dataset-row">
+                <span>53</span>
+                <span>0</span>
+                <span>203</span>
+                <span>155</span>
+                <span>0</span>
+              </div>
+              <div class="dataset-row">
+                <span>70</span>
+                <span>0</span>
+                <span>174</span>
+                <span>125</span>
+                <span>0</span>
+              </div>
+            </div>
+            <p class="case-study-note">Source: first rows from <code>pngm/dataset/heart_data_set.csv</code>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Video Walkthrough</p>
+          <h2>The flagship project also has a short product-style visual walkthrough.</h2>
+        </div>
+        <div class="page-grid">
+          <article class="page-card reveal media-card">
+            <div class="video-proof-shell">
+              <video class="portfolio-video" controls muted loop playsinline preload="metadata">
+                <source src="pngm/static/media/hdd-robotic-diagnostic.mp4" type="video/mp4">
+              </video>
+            </div>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Use it for</p>
+            <ul class="detail-list">
+              <li>Fast recruiter walkthroughs</li>
+              <li>Sharing the flagship project visually</li>
+              <li>Supporting the live demo and printable case-study flow</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="button" href="heart-disease-demo.html">Open Demo</a>
+              <a class="button button-ghost" href="results.html">View Results</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section premium-section">
+        <div class="page-grid">
+          <article class="page-card reveal">
+            <p class="card-label">Limitations</p>
+            <ul class="detail-list">
+              <li>This is a project-grade screening tool, not a medically certified diagnostic system.</li>
+              <li>The portfolio presentation does not yet expose model calibration, ROC curves, or validation summary in the UI.</li>
+              <li>The live demo is designed for local use and review, not clinical deployment.</li>
+            </ul>
+          </article>
+          <article class="page-card reveal">
+            <p class="card-label">Why It Is the Flagship</p>
+            <ul class="detail-list">
+              <li>Strongest combination of data, ML experimentation, and a real Flask app.</li>
+              <li>Clear business and social relevance through healthcare screening.</li>
+              <li>Best showcase of end-to-end thinking: dataset, models, UI, and printable outcome.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">AI / ML portfolio focused on live demos, case studies, proof-backed projects, and recruiter-ready technical presentation.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+

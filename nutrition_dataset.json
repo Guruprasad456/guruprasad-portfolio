@@ -1,0 +1,158 @@
+{
+  "meals": [
+    {
+      "slot": "breakfast",
+      "title": "Oats bowl with banana and chia",
+      "description": "Slow carbs and fiber for stable morning energy.",
+      "calories": 420,
+      "protein": 18,
+      "carbs": 56,
+      "fat": 11,
+      "ingredients": ["oats", "banana", "chia seeds"],
+      "tags": ["balanced", "vegetarian", "quick", "smart", "maintenance"]
+    },
+    {
+      "slot": "breakfast",
+      "title": "Besan chilla with curd",
+      "description": "Quick vegetarian breakfast with better protein support.",
+      "calories": 390,
+      "protein": 21,
+      "carbs": 35,
+      "fat": 13,
+      "ingredients": ["besan", "curd", "onion"],
+      "tags": ["vegetarian", "quick", "smart", "fatLoss", "maintenance"]
+    },
+    {
+      "slot": "breakfast",
+      "title": "Protein smoothie bowl",
+      "description": "Fast high-protein breakfast for training and muscle gain goals.",
+      "calories": 480,
+      "protein": 32,
+      "carbs": 48,
+      "fat": 14,
+      "ingredients": ["milk", "banana", "protein powder", "oats"],
+      "tags": ["highProtein", "quick", "muscleGain", "premium"]
+    },
+    {
+      "slot": "lunch",
+      "title": "Rice, dal, and salad plate",
+      "description": "Reliable lunch structure with plant protein and fiber.",
+      "calories": 620,
+      "protein": 24,
+      "carbs": 88,
+      "fat": 16,
+      "ingredients": ["rice", "dal", "cucumber", "tomato"],
+      "tags": ["balanced", "vegetarian", "smart", "maintenance"]
+    },
+    {
+      "slot": "lunch",
+      "title": "Paneer millet bowl",
+      "description": "Higher protein vegetarian lunch with slower carbs.",
+      "calories": 590,
+      "protein": 31,
+      "carbs": 54,
+      "fat": 22,
+      "ingredients": ["paneer", "millet", "capsicum"],
+      "tags": ["vegetarian", "highProtein", "maintenance", "premium"]
+    },
+    {
+      "slot": "lunch",
+      "title": "Chicken rice power bowl",
+      "description": "High-protein lunch with controlled carbs for active days.",
+      "calories": 640,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 19,
+      "ingredients": ["chicken", "rice", "lettuce"],
+      "tags": ["highProtein", "muscleGain", "maintenance", "moderate"]
+    },
+    {
+      "slot": "lunch",
+      "title": "Rajma rice combo",
+      "description": "Budget-friendly plant protein lunch for sustained energy.",
+      "calories": 560,
+      "protein": 23,
+      "carbs": 82,
+      "fat": 11,
+      "ingredients": ["rajma", "rice", "onion", "tomato"],
+      "tags": ["vegetarian", "smart", "maintenance", "fatLoss"]
+    },
+    {
+      "slot": "snack",
+      "title": "Curd with seeds",
+      "description": "Cooling snack that supports digestion and satiety.",
+      "calories": 210,
+      "protein": 12,
+      "carbs": 14,
+      "fat": 11,
+      "ingredients": ["curd", "mixed seeds"],
+      "tags": ["balanced", "vegetarian", "quick", "fatLoss", "smart"]
+    },
+    {
+      "slot": "snack",
+      "title": "Greek yogurt protein cup",
+      "description": "Compact recovery snack with steady protein support.",
+      "calories": 240,
+      "protein": 18,
+      "carbs": 17,
+      "fat": 8,
+      "ingredients": ["greek yogurt", "berries"],
+      "tags": ["highProtein", "quick", "maintenance", "premium"]
+    },
+    {
+      "slot": "snack",
+      "title": "Fruit and roasted makhana",
+      "description": "Light snack with low heaviness and easy portability.",
+      "calories": 190,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 7,
+      "ingredients": ["seasonal fruit", "makhana"],
+      "tags": ["vegetarian", "quick", "smart", "fatLoss"]
+    },
+    {
+      "slot": "dinner",
+      "title": "Khichdi with yogurt",
+      "description": "Gentle dinner with easy digestion and good consistency.",
+      "calories": 450,
+      "protein": 17,
+      "carbs": 61,
+      "fat": 12,
+      "ingredients": ["rice", "moong dal", "curd"],
+      "tags": ["balanced", "vegetarian", "smart", "fatLoss", "maintenance"]
+    },
+    {
+      "slot": "dinner",
+      "title": "Tofu curry with roti",
+      "description": "Protein-forward vegetarian dinner without heavy digestion load.",
+      "calories": 510,
+      "protein": 28,
+      "carbs": 46,
+      "fat": 19,
+      "ingredients": ["tofu", "whole wheat flour", "peas"],
+      "tags": ["vegetarian", "highProtein", "maintenance", "moderate"]
+    },
+    {
+      "slot": "dinner",
+      "title": "Grilled chicken with vegetables",
+      "description": "Lean protein dinner for recovery and muscle-supportive evenings.",
+      "calories": 540,
+      "protein": 39,
+      "carbs": 24,
+      "fat": 25,
+      "ingredients": ["chicken", "zucchini", "beans"],
+      "tags": ["highProtein", "muscleGain", "fatLoss", "moderate"]
+    },
+    {
+      "slot": "dinner",
+      "title": "Vegetable soup and toast",
+      "description": "Light dinner option for lower-stress or lower-calorie evenings.",
+      "calories": 340,
+      "protein": 11,
+      "carbs": 42,
+      "fat": 11,
+      "ingredients": ["mixed vegetables", "bread"],
+      "tags": ["balanced", "vegetarian", "quick", "fatLoss", "smart"]
+    }
+  ]
+}

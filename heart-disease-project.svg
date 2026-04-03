@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1026"/>
+      <stop offset="1" stop-color="#081C2C"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="120" y1="80" x2="680" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#241534"/>
+      <stop offset="1" stop-color="#10283C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="170" x2="620" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B7A"/>
+      <stop offset=".5" stop-color="#FFC857"/>
+      <stop offset="1" stop-color="#73FBD3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="34" fill="url(#bg)"/>
+  <circle cx="136" cy="104" r="64" fill="#FF6B7A" fill-opacity=".15"/>
+  <circle cx="690" cy="428" r="92" fill="#73FBD3" fill-opacity=".12"/>
+  <rect x="96" y="76" width="608" height="368" rx="28" fill="url(#panel)" stroke="white" stroke-opacity=".08"/>
+  <rect x="132" y="114" width="174" height="292" rx="22" fill="#0E1824" stroke="white" stroke-opacity=".08"/>
+  <path d="M176 256H208L228 214L258 302L286 238H326" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="252" cy="182" r="34" fill="#FF6B7A" fill-opacity=".18"/>
+  <path d="M252 212C224 196 214 166 231 148C241 138 257 141 266 154C275 141 291 138 301 148C318 166 308 196 280 212L266 221L252 212Z" fill="#FF6B7A"/>
+  <rect x="344" y="114" width="324" height="120" rx="22" fill="#0E1824" stroke="white" stroke-opacity=".08"/>
+  <text x="372" y="160" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Heart Disease Detection</text>
+  <text x="372" y="194" fill="#9FB5C8" font-family="Arial, sans-serif" font-size="16">Random Forest • Flask • Clinical Insights</text>
+  <rect x="344" y="258" width="324" height="148" rx="22" fill="#0E1824" stroke="white" stroke-opacity=".08"/>
+  <rect x="372" y="290" width="180" height="12" rx="6" fill="#F7FAFF" fill-opacity=".14"/>
+  <rect x="372" y="318" width="244" height="12" rx="6" fill="#F7FAFF" fill-opacity=".1"/>
+  <rect x="372" y="346" width="208" height="12" rx="6" fill="#F7FAFF" fill-opacity=".1"/>
+  <rect x="372" y="374" width="152" height="12" rx="6" fill="url(#accent)" fill-opacity=".9"/>
+</svg>

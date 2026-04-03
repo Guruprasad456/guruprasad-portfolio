@@ -1,0 +1,13 @@
+﻿Use this folder only for GitHub Pages upload.
+
+Folder:
+C:\AIML carrer\Dimploma in articial intelligence and machine learning\Portfolio\portfolio-github-pages
+
+Upload:
+- all root files in this folder
+- the pngm folder inside this folder
+
+Do not upload the main Portfolio folder for GitHub Pages if you want the static version.
+
+Expected live URL:
+https://guruprasad456.github.io/guruprasad-portfolio/

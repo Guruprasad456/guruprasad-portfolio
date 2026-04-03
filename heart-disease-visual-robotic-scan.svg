@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="140" y1="40" x2="1140" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100D20"/>
+      <stop offset="0.52" stop-color="#0C2037"/>
+      <stop offset="1" stop-color="#081926"/>
+    </linearGradient>
+    <linearGradient id="scanAccent" x1="270" y1="180" x2="920" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6F7F"/>
+      <stop offset="0.4" stop-color="#FFC857"/>
+      <stop offset="1" stop-color="#63E7FF"/>
+    </linearGradient>
+    <radialGradient id="heartGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(424 358) rotate(90) scale(166 160)">
+      <stop stop-color="#FF6F7F" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FF6F7F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" rx="34" fill="url(#bg3)"/>
+  <circle cx="1030" cy="112" r="94" fill="#63E7FF" fill-opacity="0.08"/>
+  <circle cx="194" cy="614" r="122" fill="#FFC857" fill-opacity="0.08"/>
+
+  <rect x="84" y="84" width="1112" height="552" rx="34" fill="#101925" stroke="rgba(255,255,255,0.08)"/>
+  <text x="128" y="156" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="26" letter-spacing="4">ROBOTIC HEART SCAN VISUAL</text>
+  <text x="128" y="220" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Heart Disease Detection</text>
+  <text x="128" y="278" fill="#9BB5C8" font-family="Arial, sans-serif" font-size="24">AI-assisted screening concept with robotic scan, risk analysis, and report output</text>
+
+  <g transform="translate(128 314)">
+    <rect width="620" height="258" rx="30" fill="#0E1824" stroke="rgba(255,255,255,0.08)"/>
+    <ellipse cx="296" cy="128" rx="160" ry="150" fill="url(#heartGlow)"/>
+    <circle cx="296" cy="128" r="130" stroke="#F7FAFF" stroke-opacity="0.08"/>
+    <circle cx="296" cy="128" r="92" stroke="#63E7FF" stroke-opacity="0.2"/>
+    <path d="M296 212C238 182 216 126 252 92C274 70 306 76 324 104C342 76 374 70 396 92C432 126 410 182 352 212L324 230L296 212Z" fill="#FF6F7F"/>
+    <path d="M170 130H224L252 82L292 196L338 110H412L446 130H500" stroke="url(#scanAccent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="26" y="24" width="178" height="54" rx="18" fill="#111F2E"/>
+    <text x="52" y="58" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Target: Cardiac Risk</text>
+    <rect x="430" y="180" width="156" height="42" rx="15" fill="#111F2E"/>
+    <text x="456" y="207" fill="#63E7FF" font-family="Arial, sans-serif" font-size="18" font-weight="700">Scan in progress</text>
+  </g>
+
+  <g transform="translate(790 206)">
+    <rect x="0" y="154" width="300" height="202" rx="28" fill="#0E1824" stroke="rgba(255,255,255,0.08)"/>
+    <text x="28" y="194" fill="#95ADC4" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">SCREENING REPORT</text>
+    <text x="28" y="236" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">Risk summary available</text>
+    <rect x="28" y="266" width="164" height="12" rx="6" fill="url(#scanAccent)"/>
+    <rect x="28" y="294" width="226" height="12" rx="6" fill="#F7FAFF" fill-opacity="0.12"/>
+    <rect x="28" y="322" width="196" height="12" rx="6" fill="#F7FAFF" fill-opacity="0.12"/>
+
+    <g transform="translate(34 0)">
+      <rect x="72" y="24" width="118" height="22" rx="11" fill="#152433"/>
+      <rect x="0" y="78" width="226" height="28" rx="14" fill="#132231"/>
+      <rect x="80" y="106" width="56" height="114" rx="18" fill="#1B2D3F"/>
+      <rect x="104" y="210" width="16" height="52" rx="8" fill="#1B2D3F"/>
+      <circle cx="108" cy="64" r="24" fill="#F7FAFF" fill-opacity="0.14"/>
+      <path d="M120 128H180L194 146L164 168L128 158Z" fill="#21384E"/>
+      <rect x="178" y="142" width="72" height="18" rx="9" fill="url(#scanAccent)"/>
+      <text x="8" y="100" fill="#95ADC4" font-family="Arial, sans-serif" font-size="14">Robotic scan arm</text>
+    </g>
+  </g>
+
+  <text x="788" y="146" fill="#F7FAFF" font-family="Arial, sans-serif" font-size="40" font-weight="700">AI + Robotics style concept</text>
+  <text x="788" y="188" fill="#9BB5C8" font-family="Arial, sans-serif" font-size="22">Useful for posters, intro slides, or short project videos</text>
+</svg>

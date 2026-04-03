@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Interactive portfolio demo for Guruprasad Potdar's AI-Powered Diet Planner project."
+  >
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AI-Powered Diet Planner Demo | Guruprasad Potdar">
+  <meta property="og:description" content="Open the live portfolio demo of Guruprasad Potdar's AI-Powered Diet Planner.">
+  <meta property="og:url" content="https://guruprasad456.github.io/guruprasad-portfolio/diet-planner-demo.html">
+  <meta property="og:image" content="social-preview.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1622">
+  <title>AI-Powered Diet Planner Demo | guruprasad-portfolio</title>
+  <link rel="canonical" href="https://guruprasad456.github.io/guruprasad-portfolio/diet-planner-demo.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css?v=20260401-results-upgrade">
+</head>
+<body class="demo-diet-page">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">GP</div>
+    <p>Loading portfolio experience</p>
+  </div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="floating-orb orb-one" aria-hidden="true"></div>
+    <div class="floating-orb orb-two" aria-hidden="true"></div>
+    <div class="floating-orb orb-three" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">GP</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="is-current">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switcher" aria-label="Theme switcher">
+          <button class="theme-chip is-active" type="button" data-theme="theme-midnight">Midnight</button>
+          <button class="theme-chip" type="button" data-theme="theme-aurora">Aurora</button>
+          <button class="theme-chip" type="button" data-theme="theme-sunrise">Sunrise</button>
+        </div>
+        <a class="button button-ghost" href="contact.html">Let's Talk</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section demo-hero-section">
+        <div class="demo-hero-grid diet-hero-layout">
+          <div class="demo-hero-copy reveal">
+            <p class="eyebrow">Nutrition AI Demo</p>
+            <h1 class="page-title">AI-Powered Diet Planner with fast meal planning and nutrition guidance.</h1>
+            <p class="page-subtitle demo-hero-subtitle">
+              A cleaner planner that turns your goal and diet brief into a usable daily meal strategy.
+            </p>
+
+            <div class="demo-chip-row">
+              <span>NLP Nutrition Brief</span>
+              <span>Adaptive Macro Logic</span>
+              <span>Grocery Intelligence</span>
+              <span>Routine Planning</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button" href="#dietPlannerLiveDemo">Open Nutrition Board</a>
+              <a class="button button-ghost" href="projects.html">Back to Projects</a>
+              <button class="button button-ghost" type="button" data-demo-walkthrough="diet">Start Walkthrough</button>
+            </div>
+          </div>
+
+          <article class="page-card demo-showcase-card diet-meal-showcase reveal">
+            <div class="demo-showcase-top">
+              <span class="card-label">Meal Board</span>
+              <span class="demo-mini-badge">Nutrition + NLP</span>
+            </div>
+            <div class="diet-meal-canvas">
+              <article class="diet-meal-tile breakfast">
+                <span>Breakfast</span>
+                <strong>Protein Oats</strong>
+              </article>
+              <article class="diet-meal-tile lunch">
+                <span>Lunch</span>
+                <strong>Balanced Bowl</strong>
+              </article>
+              <article class="diet-meal-tile dinner">
+                <span>Dinner</span>
+                <strong>Light Plate</strong>
+              </article>
+              <div class="diet-macro-wheel">
+                <span>Macro Split</span>
+                <strong>35 / 30 / 35</strong>
+              </div>
+            </div>
+            <div class="diet-quick-stats">
+              <article class="diet-stat-pill">
+                <span>Prep</span>
+                <strong>Quick</strong>
+              </article>
+              <article class="diet-stat-pill">
+                <span>Hydration</span>
+                <strong>2.8 L</strong>
+              </article>
+              <article class="diet-stat-pill">
+                <span>Daily Goal</span>
+                <strong>2100 kcal</strong>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="dietPlannerLiveDemo">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nutrition Board</p>
+          <h2>Build a personalized plan in one pass.</h2>
+        </div>
+
+        <div class="demo-builder-grid diet-board-layout">
+          <article class="page-card demo-form-card diet-board-form reveal">
+            <div class="demo-panel-head">
+              <div>
+                <p class="card-label">Input Goals</p>
+                <h2>Advanced nutrition builder</h2>
+              </div>
+            </div>
+
+            <p class="demo-note">Use the brief for preferences, then the planner fills in the meals and routine.</p>
+
+            <form class="demo-builder-form" id="dietPlannerDemoForm">
+              <label class="field field-full">
+                <span>Nutrition brief</span>
+                <textarea name="dietBrief" placeholder="Example: I want a high-protein vegetarian plan, quick breakfasts, affordable lunches, and less oily dinners.">I want a high-protein vegetarian plan, quick breakfasts, affordable lunches, and less oily dinners.</textarea>
+              </label>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Goal</span>
+                  <select name="goal">
+                    <option value="fatLoss">Fat loss</option>
+                    <option value="maintain" selected>Maintain</option>
+                    <option value="muscleGain">Muscle gain</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Diet preference</span>
+                  <select name="dietType">
+                    <option value="balanced" selected>Balanced</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="highProtein">High protein</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Target calories</span>
+                  <input name="calories" type="number" min="1300" max="3200" value="2100">
+                </label>
+
+                <label class="field">
+                  <span>Meals per day</span>
+                  <select name="mealsPerDay">
+                    <option value="3">3 meals</option>
+                    <option value="4" selected>4 meals</option>
+                    <option value="5">5 meals</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Activity level</span>
+                  <select name="activityLevel">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Prep time</span>
+                  <select name="prepTime">
+                    <option value="quick" selected>Quick and simple</option>
+                    <option value="moderate">Moderate cooking</option>
+                    <option value="batch">Batch-prep friendly</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="demo-field-grid">
+                <label class="field">
+                  <span>Budget style</span>
+                  <select name="budgetLevel">
+                    <option value="smart" selected>Budget smart</option>
+                    <option value="flexible">Flexible</option>
+                    <option value="premium">Premium ingredients</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Allergies / restrictions</span>
+                  <input name="allergies" type="text" value="None">
+                </label>
+              </div>
+
+              <div class="demo-form-actions">
+                <button class="button" type="submit">Build Plan</button>
+                <button class="button button-ghost" type="reset">Reset</button>
+              </div>
+            </form>
+          </article>
+
+          <article class="page-card demo-report-card diet-board-report reveal">
+            <div class="demo-result-shell">
+              <div class="demo-meta-grid">
+                <article class="demo-meta-card">
+                  <span>Daily Calories</span>
+                  <strong id="dietCaloriesTarget">2100 kcal</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Protein Target</span>
+                  <strong id="dietProteinTarget">85-105 g</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Hydration</span>
+                  <strong id="dietHydrationTarget">2.8 L</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Macro Split</span>
+                  <strong id="dietMacroTarget">35C / 30P / 35F</strong>
+                </article>
+                <article class="demo-meta-card">
+                  <span>Planning Mode</span>
+                  <strong id="dietPlanningMode">Balanced routine support</strong>
+                </article>
+              </div>
+
+              <article class="demo-output-card demo-action-card">
+                <div class="demo-action-card-head">
+                  <div>
+                    <h4>Plan Export</h4>
+                    <p class="demo-mini-copy" id="dietExportNote">Copy the current plan summary or save the meal strategy as a text file for later use.</p>
+                  </div>
+                  <div class="demo-action-bar">
+                    <button class="button button-small button-ghost" id="dietCopyButton" type="button">Copy Plan</button>
+                    <button class="button button-small button-ghost" id="dietDownloadButton" type="button">Download TXT</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="demo-output-card">
+                <h4>Plan Summary</h4>
+                <p id="dietPlannerSummary">This sample plan is tuned for maintenance, balanced nutrition, and medium daily activity.</p>
+              </article>
+
+              <div class="demo-accent-strip" id="dietPlannerTagStrip"></div>
+              <div class="demo-output-grid" id="dietPlanGrid"></div>
+
+              <details class="demo-details">
+                <summary>View Details</summary>
+                <div class="demo-details-body">
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Consistency Score</span>
+                      <strong id="dietConsistencyScore">88%</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Budget Estimate</span>
+                      <strong id="dietBudgetEstimate">Balanced daily spend</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Prep Load</span>
+                      <strong id="dietPrepLoad">Quick kitchen flow</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Meal Rhythm</span>
+                      <strong id="dietMealRhythm">Evenly spaced support</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Metabolic Fit</span>
+                      <strong id="dietMetabolicFit">89%</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Satiety Balance</span>
+                      <strong id="dietSatietyScore">Steady hunger control</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Micronutrient Coverage</span>
+                      <strong id="dietMicronutrientCoverage">Broad food diversity</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Adherence Risk</span>
+                      <strong id="dietAdherenceRisk">Low plan-friction risk</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-meta-grid">
+                    <article class="demo-meta-card">
+                      <span>Model Engine</span>
+                      <strong id="dietModelEngine">Nutrition vector recommender</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Match Confidence</span>
+                      <strong id="dietModelConfidence">88% average meal fit</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Validation Score</span>
+                      <strong id="dietModelValidation">85.7% preference match</strong>
+                    </article>
+                    <article class="demo-meta-card">
+                      <span>Cluster Quality</span>
+                      <strong id="dietModelClusterQuality">68.9% separation</strong>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <h4>Macro Reasoning</h4>
+                      <p id="dietMacroRationale">The planner is balancing calories, protein density, and prep effort to make the routine easier to follow consistently.</p>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Substitution Engine</h4>
+                      <ul class="demo-inline-list" id="dietSwapList"></ul>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Execution Protocol</h4>
+                      <ul class="demo-inline-list" id="dietCoachProtocol"></ul>
+                    </article>
+                  </div>
+
+                  <div class="demo-output-grid">
+                    <article class="demo-output-card">
+                      <h4>Grocery Intelligence</h4>
+                      <ul class="demo-inline-list" id="dietGroceryList"></ul>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Daily Routine</h4>
+                      <ul class="demo-inline-list" id="dietRoutineList"></ul>
+                    </article>
+                    <article class="demo-output-card">
+                      <h4>Smart Basket Zones</h4>
+                      <ul class="demo-inline-list" id="dietShoppingZones"></ul>
+                    </article>
+                  </div>
+
+                  <ul class="demo-result-list" id="dietPlannerTips"></ul>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="chatbot-widget reveal" id="chatbotWidget">
+      <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+        <span class="chatbot-toggle-mark">G</span>
+        <span class="chatbot-toggle-text">
+          <strong>Guru AI</strong>
+          <small>Ask about me...</small>
+        </span>
+        <span class="chatbot-toggle-badge">Portfolio</span>
+      </button>
+
+      <section class="chatbot-panel" id="chatbotPanel" aria-label="Portfolio chatbot" hidden>
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-brandline">
+              <span class="chatbot-status-dot" aria-hidden="true"></span>
+              <p class="chatbot-label">Portfolio Assistant</p>
+            </div>
+            <h3>Guru AI Portfolio</h3>
+            <p class="chatbot-subtitle">Projects, resume, and contact in one place.</p>
+          </div>
+          <div class="chatbot-header-actions">
+            <button class="chatbot-voice" id="chatbotVoice" type="button" aria-label="Speak latest answer">Speak</button>
+            <button class="chatbot-voice chatbot-pause" id="chatbotPause" type="button" aria-label="Pause or resume speech" disabled>Pause</button>
+            <button class="chatbot-voice chatbot-clear" id="chatbotClear" type="button" aria-label="Clear conversation">Clear</button>
+            <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chatbot">x</button>
+          </div>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+          <article class="chatbot-message bot" data-raw-text="Ask about any project, the resume, or contact details.">
+            <div class="chatbot-message-head">
+              <span class="chatbot-message-role">Assistant</span>
+              <span class="chatbot-message-time">Ready</span>
+            </div>
+            <div class="chatbot-message-content">
+              <p>Ask about any project, the resume, or contact details.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="chatbot-suggestions">
+          <button class="suggestion-chip" type="button" data-prompt="Introduce Guruprasad and summarize his profile">Profile</button>
+          <button class="suggestion-chip" type="button" data-prompt="Explain Guruprasad's projects and live demos in detail">Projects</button>
+          <button class="suggestion-chip" type="button" data-prompt="How can I contact Guruprasad?">Contact</button>
+        </div>
+
+        <form class="chatbot-form" id="chatbotForm">
+          <div class="chatbot-input-wrap">
+            <textarea
+              class="chatbot-input"
+              id="chatbotInput"
+              rows="1"
+              placeholder="Ask about Guruprasad's work, resume, demos, or contact"
+            ></textarea>
+            <p class="chatbot-composer-note">Press Enter to send. Use Shift + Enter for a new line.</p>
+          </div>
+          <div class="chatbot-form-actions">
+            <button class="button chatbot-send" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Guruprasad Potdar</p>
+          <p class="footer-copy">ML Developer and Data Scientist building practical AI systems, modern interfaces, and portfolio-ready project experiences.</p>
+        </div>
+        <div>
+          <p class="footer-title">Navigate</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Connect</p>
+          <div class="footer-links">
+            <a href="mailto:gurupreasadpotdar1@gmail.com">Email</a>
+            <a href="https://github.com/Guruprasad456" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/guruprasad-potdar-9928173b7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js?v=20260401-results-upgrade"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

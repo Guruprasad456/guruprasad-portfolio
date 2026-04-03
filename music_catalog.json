@@ -1,0 +1,144 @@
+{
+  "tracks": [
+    {
+      "title": "Neural Focus Loop",
+      "artist": "Studio Voltage",
+      "mood": "focused",
+      "energy": "medium",
+      "sessions": ["study", "quick"],
+      "language": "Mixed",
+      "lyricDensity": "minimal",
+      "tags": ["coding", "futuristic", "synth", "focus"]
+    },
+    {
+      "title": "Code Window Drive",
+      "artist": "Grid Motion",
+      "mood": "focused",
+      "energy": "medium",
+      "sessions": ["study", "lateNight"],
+      "language": "English",
+      "lyricDensity": "minimal",
+      "tags": ["coding", "deep work", "electronic"]
+    },
+    {
+      "title": "Circuit Calm Arc",
+      "artist": "Pulse Logic",
+      "mood": "focused",
+      "energy": "low",
+      "sessions": ["study", "lateNight"],
+      "language": "Mixed",
+      "lyricDensity": "minimal",
+      "tags": ["ambient", "focus", "soft"]
+    },
+    {
+      "title": "Cloudline Drift",
+      "artist": "Velvet Echo",
+      "mood": "calm",
+      "energy": "low",
+      "sessions": ["quick", "lateNight"],
+      "language": "English",
+      "lyricDensity": "minimal",
+      "tags": ["calm", "soft", "night"]
+    },
+    {
+      "title": "Glass Lake Echo",
+      "artist": "Afterglow Unit",
+      "mood": "calm",
+      "energy": "medium",
+      "sessions": ["lateNight", "study"],
+      "language": "Mixed",
+      "lyricDensity": "minimal",
+      "tags": ["ambient", "cinematic", "reflective"]
+    },
+    {
+      "title": "Golden Motion Drive",
+      "artist": "Weekend Relay",
+      "mood": "happy",
+      "energy": "medium",
+      "sessions": ["quick", "study"],
+      "language": "English",
+      "lyricDensity": "balanced",
+      "tags": ["bright", "uplift", "clean"]
+    },
+    {
+      "title": "Weekend Lightbeam",
+      "artist": "City Bloom",
+      "mood": "happy",
+      "energy": "high",
+      "sessions": ["quick", "workout"],
+      "language": "Mixed",
+      "lyricDensity": "full",
+      "tags": ["feel good", "festival", "driving"]
+    },
+    {
+      "title": "Velocity Charge",
+      "artist": "Runway Pulse",
+      "mood": "energetic",
+      "energy": "high",
+      "sessions": ["workout"],
+      "language": "English",
+      "lyricDensity": "balanced",
+      "tags": ["gym", "power", "cardio"]
+    },
+    {
+      "title": "Turbo Heartline",
+      "artist": "Ignite Frame",
+      "mood": "energetic",
+      "energy": "high",
+      "sessions": ["workout", "quick"],
+      "language": "Mixed",
+      "lyricDensity": "full",
+      "tags": ["run", "hype", "strong beat"]
+    },
+    {
+      "title": "Mirrorlight Tape",
+      "artist": "Slow Orbit",
+      "mood": "reflective",
+      "energy": "low",
+      "sessions": ["lateNight"],
+      "language": "English",
+      "lyricDensity": "balanced",
+      "tags": ["nostalgia", "reflective", "night"]
+    },
+    {
+      "title": "Afterglow Pages",
+      "artist": "Memory Tide",
+      "mood": "reflective",
+      "energy": "medium",
+      "sessions": ["lateNight", "quick"],
+      "language": "Hindi",
+      "lyricDensity": "balanced",
+      "tags": ["emotional", "late night", "warm"]
+    },
+    {
+      "title": "Soft Transit Glow",
+      "artist": "Metro Float",
+      "mood": "calm",
+      "energy": "medium",
+      "sessions": ["quick", "study"],
+      "language": "Mixed",
+      "lyricDensity": "minimal",
+      "tags": ["commute", "smooth", "minimal"]
+    },
+    {
+      "title": "Open Window Rise",
+      "artist": "North Avenue",
+      "mood": "happy",
+      "energy": "medium",
+      "sessions": ["study", "quick"],
+      "language": "Hindi",
+      "lyricDensity": "balanced",
+      "tags": ["hindi", "light", "fresh"]
+    },
+    {
+      "title": "Night Archive",
+      "artist": "Deep Console",
+      "mood": "reflective",
+      "energy": "low",
+      "sessions": ["lateNight", "study"],
+      "language": "Mixed",
+      "lyricDensity": "minimal",
+      "tags": ["cinematic", "dark", "futuristic"]
+    }
+  ]
+}
